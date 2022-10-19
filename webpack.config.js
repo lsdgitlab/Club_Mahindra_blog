@@ -155,11 +155,11 @@ module.exports = (env, argv) => ({
       location:'header',
       template_filename: htmlFileName
     }),
-    new HtmlWebpackPartialsPlugin({
-        path:path.join(__dirname,'./src/footer.html'),
-        location:'footer',
-        template_filename: htmlFileName
-    }),
+    // new HtmlWebpackPartialsPlugin({
+    //     path:path.join(__dirname,'./src/footer.html'),
+    //     location:'footer',
+    //     template_filename: htmlFileName
+    // }),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",

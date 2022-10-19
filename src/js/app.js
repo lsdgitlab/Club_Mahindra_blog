@@ -1,6 +1,6 @@
 // console.log("webpack")
-import $ from "jquery";
-import 'owl.carousel';
+// import $ from "jquery";
+// import 'owl.carousel';
 import lozad from 'lozad';
 const observer = lozad();
 observer.observe();
