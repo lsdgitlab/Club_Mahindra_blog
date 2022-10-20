@@ -1,3 +1,185 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.banner-section{
+  .di-flex{
+    justify-content: space-between;
+  }
+  article{
+    width: 66%;
+    max-width: 100%;
+    .banner-item{
+      display: grid;
+      .bg-img, .content{
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+      }
+      .content{
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+      h2{
+        font-size: 24px;
+        line-height: 1.5;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: "Helvetica";
+        margin-bottom: 16px;
+      }
+    }
+  
+  }
+  aside{
+    width: 33%;
+    max-width: 100%;
+    .form-container{
+      border-radius: 5px;
+      // filter: drop-shadow(0px 150px 75px rgba(0,0,0,0.05));
+      background-color: #ffffff;
+      border: 2px solid #e1e1e1;
+      box-shadow: 0px 150px 75px rgba(0,0,0,0.05);
+      padding: 20px;
+      h2{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #000000;
+        font-weight: bold;
+        font-family: "S FPro Display";
+      }
+      .form {
+        padding: 1px 0;
+        .form-space {
+          margin: 80px 0;
+        }
+      }
+
+      .form-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+      }
+      .col-input {
+        margin-bottom: 10px;
+        width: 46%;
+        margin: 0 0% 48px 0%;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      .label{
+        width: 100%;
+        font-size: 20px;
+        &.error{
+          color: #E34949;
+        }
+      }
+      form input, form .col-input select {
+        border-radius: 4px;
+        padding: 10px 16px;
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        font-size: 16px;
+        font-size: 20px;
+        font-size: 14px;
+        height: 30px;
+        color: #010101;
+        font-family: "S FPro Display";
+        border-radius: 5px;
+        background-color: #ebebeb;
+        border: 1px solid #acacac;
+        
+        &::placeholder{
+          color: #888888;
+          opacity: 1;
+        }
+        &::-webkit-input-placeholder {
+          color: #888888;
+          opacity: 1;
+        }
+        &:-ms-input-placeholder {
+          color: #888888;
+          opacity: 1;
+        }
+        // &::-webkit-input-placeholder , &:-ms-input-placeholder, &::placeholder {
+        //   color: yellow;
+        //   background-color: red;
+        // }
+        // ::placeholder{
+        //   color:red;
+        // }
+        &.error{
+          border-color: #E34949;
+          background-color: rgba(227, 73, 73, 0.05);
+          &::-webkit-input-placeholder{
+            color: #E34949;
+          }
+          &::placeholder{
+            color: #E34949;
+          }
+          &::placeholder{
+            color: #E34949;
+          }
+        }
+      }
+        
+      form .col-input select {
+        -moz-appearance: none;
+        -webkit-appearance:none;
+        appearance: none;
+        background-image: url("../assets/images/select-arrow.svg");
+        background-position: 96% 50%;
+        background-repeat: no-repeat;
+        // color: #000000;
+        color: #888888;
+        option {
+          color: #000000;
+        }
+        option:first-child {
+          color: #888888;
+          background-color: transparent;
+          opacity: 1;
+        }
+        &.error{
+          color: #E34949;
+          opacity: 1;
+    
+        }
+      }
+      form .col-input .check-box {
+        height: auto;
+        width: auto;
+      }
+      .submit-btn {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 50px;
+        background: #202020;
+        padding: 14px 64px;
+        border: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .form-content {
+        .invalid,
+        .isempty {
+          font-size: 16px;
+          color: #e34949;
+          margin: 0;
+          margin-top: 8px;
+          display: none;
+          position: absolute;
+          left: 0;
+          top: auto;
+        }
+      }
+    }
+  }
+}

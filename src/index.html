@@ -15,9 +15,88 @@
     <div class="wrapper" data-barba="container" data-barba-namespace="home">
       <header></header>
       <main class="main-warpper home-page" >
-        <img src="<%= require('./img/king.png') %>" alt="">
-        
-       
+        <!-- <img src="<%= require('./img/king.png') %>" alt=""> -->
+        <section class="banner-section">
+          <div class="container">
+            <div class="di-flex">
+              <article>
+                <div id="bannerCarousel" class="owl-carousel owl-theme banner-carousel">
+                  <div class="item">
+                    <div class="banner-item">
+                      <img src="<%= require('./img/bg/banner-1.jpg') %>" alt="" class="bg-img">
+                      <div class="content">
+                        <div class="text-content">
+                          <h2>It’s Time for Music Lovers to Unite <br>
+                          Welcome to Arunachal Pradesh’s <br>
+                          Ziro Music Festival</h2>
+                          <a href="#!" class="read-more">Read More <i class="arrow right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="banner-item">
+                      <img src="<%= require('./img/bg/banner-1.jpg') %>" alt="" class="bg-img">
+                      <div class="content">
+                        <div class="text-content">
+                          <h2>It’s Time for Music Lovers to Unite <br>
+                          Welcome to Arunachal Pradesh’s <br>
+                          Ziro Music Festival</h2>
+                          <a href="#!" class="read-more">Read More <i class="arrow right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </article>
+              <aside>
+                <div class="form-container">
+                  <h2>Fill in the form below & we’ll reach out!</h2>
+                  <form class="form-content" id="TEstInTouch">
+                    <div class="col-input">
+                      <div class="control">
+                        <input type="text" class="form-control" name="fname" id="fname" placeholder="Name"
+                         required>
+                      </div>
+                      <p class="invalid">Please enter the valid name.</p>
+                    </div>
+                    <div class="col-input">
+                      <div class="control">
+                        <input class="form-control" type="tel" placeholder="Mobile Number" maxlength="10"
+                          onkeypress="return AllowOnlyNumbers(event);" required>
+                      </div>
+                      <p class="invalid">Please enter the valid name.</p>
+                    </div>
+                    <div class="col-input">
+                      <div class="control">
+                        <input class="form-control" type="email" placeholder="Email" required>
+                      </div>
+                      <p class="invalid">Please enter the valid email.</p>
+                    </div>
+                    <div class="col-input">
+                      <div class="control">
+                        <input type="text" class="form-control" required placeholder="Where are you from?">
+                      </div>
+                      <p class="invalid">Please enter the Where are you from.</p>
+                    </div>
+                    
+                    <div class="col-input">
+                      <div class="control">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="form-control check-box" required>
+                        <label for="vehicle1" class="label">I authorize Club Mahindra to call/email/SMS/Whatsapp me for membership plans and ongoing promotions and offers</label>
+                      </div>
+                      <p class="invalid">Please select.</p>
+                    </div>
+                    
+                  </form>
+                  <button type="submit" onclick="event.preventDefault(); submitData('TEstInTouch');"
+                      class="submit-btn">Submit</button>
+                </div>
+              </aside>
+          </div>
+        </div>
+        </section>
 
       </main>
     </div>
