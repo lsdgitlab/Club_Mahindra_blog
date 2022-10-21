@@ -19,5 +19,44 @@ if ($('#bannerCarousel').length) {
     smartSpeed: 2000,
   })
 };
-
+if ($('#blogCarousel').length) {
+  let blogCarousel = $("#blogCarousel").owlCarousel({
+    margin:0,
+    items: 3,
+    dots:false,
+    // nav:true,
+    // center:true,
+    // navText: [$('#blog-section .prev-nav'),$('#blog-section .next-nav')],
+    autoplayTimeout: 5000,
+    // loop:true,
+    smartSpeed: 2000,
+  })
+  $('#blog-section .prev-nav').on('click', function(){
+    blogCarousel.trigger('prev.owl.carousel');
+  })
+  // Go to the previous item
+  $('#blog-section .next-nav').on('click',function() {
+    blogCarousel.trigger('next.owl.carousel');
+  })
+};
+if ($('#journeyCarousel').length) {
+  let journeyCarousel = $("#journeyCarousel").owlCarousel({
+    margin:0,
+    items: 3,
+    dots:false,
+    // nav:true,
+    // center:true,
+    // navText: [$('#blog-section .prev-nav'),$('#blog-section .next-nav')],
+    autoplayTimeout: 5000,
+    // loop:true,
+    smartSpeed: 2000,
+  })
+  $('#journey-section .prev-nav').on('click', function(){
+    journeyCarousel.trigger('prev.owl.carousel');
+  })
+  // Go to the previous item
+  $('#journey-section .next-nav').on('click',function() {
+    journeyCarousel.trigger('next.owl.carousel');
+  })
+};
 // import "./page-animation/barba";

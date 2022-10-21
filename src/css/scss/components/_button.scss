@@ -20,7 +20,7 @@
   font-size: 16px;
   line-height: 1.5;
   color: #f7992c;
-  font-family: "S FPro Display";
+  font-family: "SF Pro Display";
   .arrow {
     border: solid #f7992c;
     border-width: 0 2px 2px 0;
@@ -58,4 +58,35 @@
     right: 28px;
   }
 }
-
+.nav-button{
+  .prev-nav, .next-nav{
+    // filter: drop-shadow(0 0 15px rgba(0,0,0,0.1));
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    .arrow {
+      border: solid #000000;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform-origin: center;
+    }
+    .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+    .left {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+  } 
+  .next-nav{
+    background-color: #f7992c;
+  }
+}

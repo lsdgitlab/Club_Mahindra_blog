@@ -14,7 +14,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const htmlPageNames = [
   {
       pageName: 'index.html',
-      title: 'Lsdigital gallery'
+      title: 'Club Mahindra'
   }, 
 ];
 let htmlFileName = htmlPageNames.map(htmlPage=> htmlPage.pageName);
