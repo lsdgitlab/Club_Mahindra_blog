@@ -2,6 +2,8 @@
 import $ from "jquery";
 import 'owl.carousel';
 import lozad from 'lozad';
+import  "./accordion"; 
+
 const observer = lozad();
 observer.observe();
 
@@ -19,6 +21,17 @@ if ($('#bannerCarousel').length) {
     smartSpeed: 2000,
   })
 };
+if ($('.placesCards').length) {
+  let bannerCarousel = $(".placesCards").owlCarousel({
+    margin:0,
+    items: 1,
+    dots:true,
+    nav:false,
+    dotsData: true,
+    autoplayTimeout: 5000,
+  })
+};
+
 if ($('#blogCarousel').length) {
   let blogCarousel = $("#blogCarousel").owlCarousel({
     margin:0,
