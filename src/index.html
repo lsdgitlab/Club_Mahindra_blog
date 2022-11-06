@@ -13,35 +13,237 @@
   <body data-barba="wrapper">
 
     <div class="wrapper" data-barba="container" data-barba-namespace="home">
-      <header  class="acc-header inernal-click" id="top-menu"></header>
-      <!-- <div class="header">
+      <header class="acc-header inernal-click" id="top-menu">
         <div class="container">
-          <div class="di-flex">
-            <div class="logo">
-              <a href="#!">
-                <img src="./img/club-mahindra-blog-logo.png" alt="">
-              </a>
-              
+          <div class="di-flex main-flex">
+            <a href="#!" class="mobile-menu-btn toggle_icon">
+              <img src="<%= require('./img/menu.png') %>" alt="">
+            </a>
+            <a href="./index.html" class="logo-box">
+              <img src="<%= require('./img/club-mahindra-blog-logo.png') %>" alt="">
+            </a>
+            <div class="all-in-one mobile-menu">
+              <div class="link-cotainer desk-menu">
+                <a class="close-link toggle_icon">
+                  <img src="<%= require('./img/close.png') %>" alt="">
+                </a>
+                <ul class="nav-bar">
+                                          
+
+                  <li class="nav-item">
+                    <a href="./about-us.html" class="link nav-acc-link">Resorts</a>
+                    <div class=" sub-list ">
+                      <div class="di-flex">
+                      <div class="img-box">
+                        <figure>
+                          <img src="<%= require('./img/IMAGE-RESIZE_350X350_ -04.jpg') %>" alt="">
+                          <figcaption class="content">
+                            <div class="text">
+                              <p>View all</p>
+                              <p class="header-title">100+</p>
+                              <p>Resorts</p>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <div class="link-content">
+                        <p class="title">Resorts In India</p>
+                        <div class="nav-item">
+                          <a class="pos-top" href="./about-us.html#approach">EAST (6)</a>
+                        </div>
+                        <div class="nav-item">
+                          <a class="pos-top" href="./about-us.html#funds">NORTH (15)</a>
+                        </div>
+                        <div>
+                          <a class="pos-top" href="./about-us.html#sectors">SOUTH (23)</a>
+                        </div>
+                        <div>
+                          <a class="pos-top" href="./about-us.html#awards">WEST (28)</a>
+                        </div>
+                      </div>
+                      <div class="link-content">
+                        <p class="title">International Resorts</p>
+                        <div class="nav-item">
+                          <a class="pos-top" href="./about-us.html#approach">United States of America (10)</a>
+                        </div>
+                        <div class="nav-item">
+                          <a class="pos-top" href="./about-us.html#funds">ASIA (8)</a>
+                        </div>
+                        <div>
+                          <a class="pos-top" href="./about-us.html#sectors">EUROPE (14)</a>
+                        </div>
+                        <div>
+                          <a class="pos-top" href="./about-us.html#awards">Middle East (1)</a>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link nav-acc-link" href="./esg.html">Membership</a>
+                    <ul class="sub-list aa">
+                      <li><a class="pos-top" href="./esg.html#ourcommitment">Our Commitment</a></li>
+                      <li><a class="pos-top" href="./esg.html#ourapproach">Our Approach</a></li>
+                      <li><a class="pos-top" href="./esg.html#section1">Dedicated ESG team</a></li>
+                      <li><a class="pos-top" href="./esg.html#impactmanagementframework">Impact Management Framework</a></li>
+                      <li>
+                        <a class="pos-top" href="./resources-reports.html">Sustainability Resources & Reports</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link nav-acc-link" href="./teams.html">Experiences</a>
+                    <ul class="sub-list">
+                      <li>
+                        <a class="pos-top" href="./teams.html#section2">Senior Private Equity Team</a>
+                      </li>
+                      <li>
+                        <a class="pos-top" href="./teams.html#section3">Corporate Team</a>
+                      </li>
+                      <li>
+                        <a class="pos-top" href="./teams.html#section4">Senior Directors &amp; Operating Partners</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link" href="./media.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link nav-acc-link" href="./contact.html">Member login</a>
+                    <ul class="sub-list ">
+                      <li>
+                        <a class="pos-top" href="./contact.html#contactUs">Email Us</a>
+                      </li>
+                      <li>
+                        <a class="pos-top" href="./contact.html#singapore">Singapore</a>
+                      </li>
+                      <li>
+                        <a class="pos-top" href="./contact.html#mumbai">Mumbai</a>
+                      </li>
+                      <li>
+                        <a class="pos-top" href="./contact.html#gurgaon">Gurgaon</a>
+                      </li>
+                      <li>
+                        <a class="pos-top" href="./contact.html#delhi">Delhi</a>
+                      </li>
+                      <li>
+                        <a class="pos-top" href="./contact.html#bengaluru">Bengaluru</a>
+                      </li>
+                      <li>
+                        <a class="pos-top" href="./contact.html#newYork">New York</a>
+                      </li>
+                      <li>
+                        <a class="pos-top" href="./contact.html#dubai">Dubai</a>
+                      </li>
+                      <li>
+                        <a class="pos-top" href="./contact.html#mauritius">Mauritius</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="link-cotainer mob-menu">
+                <a class="close-link toggle_icon">
+                  <img src="<%= require('./img/close.png') %>" alt="">
+                </a>
+                <section id="only-one" data-accordion-group>
+                  <section data-accordion class="">
+                    <a href="./about-us.html" class="link nav-acc-link pos-top">About Us</a><button data-control></button>
+                    <div data-content>
+                      <article class="nav-item"><a class="pos-top" href="./about-us.html#approach">Approach</a></article>
+                      <article class="nav-item"><a class="pos-top" href="./about-us.html#funds">Funds</a></article>
+                      <article><a class="pos-top" href="./about-us.html#sectors">Sectors</a></article>
+                      <article><a class="pos-top" href="./about-us.html#awards">Awards</a></article>
+                      <article><a class="pos-top" href="./about-us.html#reach">Locations</a></article>
+                    </div>
+                  </section>
+                  <section data-accordion>
+                    <a class="link nav-acc-link" href="./esg.html">Responsible Investing</a><button data-control></button>
+                    <div data-content>
+                      <article><a class="pos-top" href="./esg.html#ourcommitment">Our Commitment</a></article>
+                      <article><a class="pos-top" href="./esg.html#ourapproach">Our Approach</a></article>
+                      <article><a class="pos-top" href="./esg.html#section1">Dedicated ESG team</a></article>
+                      <article><a class="pos-top" href="./esg.html#impactmanagementframework">Impact Management Framework</a></article>
+                      <article><a class="pos-top" href="./resources-reports.html">Sustainability Resources & Reports</a></article>
+                    </div>
+                  </section>
+                  <section data-accordion>
+                    <a class="link" href="teams.html">Team</a><button data-control></button>
+                    <div data-content>
+                      <article>
+                        <a class="pos-top" href="./teams.html#section2">Senior Private Equity Team</a>
+                      </article>
+                      <article>
+                        <a class="pos-top" href="./teams.html#section3">Corporate Team</a>
+                      </article>
+                      <article>
+                        <a class="pos-top" href="./teams.html#section4">Senior Directors &amp; Operating Partners</a>
+                      </article>                                      
+                    </div>
+                  </section>            
+                  <section class="single-menu" data-accordion>
+                    <a class="link" href="./media.html">Media</a>                 
+                  </section>
+                  <section data-accordion>
+                    <a class="link nav-acc-link" href="./contact.html">Contact Us</a><button data-control></button>
+                    <div data-content>
+                      <article>
+                        <a class="pos-top" href="./contact.html#contactUs">Email Us</a>
+                      </article>
+                      <article>
+                        <a class="pos-top" href="./contact.html#singapore">Singapore</a>
+                      </article>
+                      <article>
+                        <a class="pos-top" href="./contact.html#mumbai">Mumbai</a>
+                      </article>
+                      <article>
+                        <a class="pos-top" href="./contact.html#gurgaon">Gurgaon</a>
+                      </article>
+                      <article>
+                        <a class="pos-top" href="./contact.html#delhi">Delhi</a>
+                      </article>
+                      <article>
+                        <a class="pos-top" href="./contact.html#bengaluru">Bengaluru</a>
+                      </article>
+                      <article>
+                        <a class="pos-top" href="./contact.html#newYork">New York</a>
+                      </article>
+                      <article>
+                        <a class="pos-top" href="./contact.html#dubai">Dubai</a>
+                      </article>
+                      <article>
+                        <a class="pos-top" href="./contact.html#mauritius">Mauritius</a>
+                      </article>
+                    </div>
+                  </section>
+                </section>
+                <div class="box-struc-grid">
+                  <div class="box "></div>
+                  <div class="box "></div>
+                  <div class="box "></div>
+                  <div class="box fill"></div>
+                  <div class="box "></div>
+                  <div class="box fill"></div>
+                  <div class="box fill"></div>
+                  <div class="box fill"></div>
+                  <div class="box fill"></div>
+                  <div class="box "></div>
+                  <div class="box fill"></div>
+                  <div class="box fill"></div>
+                </div>
+              </div>
             </div>
-            <nav class="nav" role="navigation">
-              <ul class="nav-bar">
-                <li class="nav-item">
-                  <div class="link nav-acc-link"><a href="./about-us.html">About Us</a>  <a class="acc-btn">+</a></div>
-                  <ul class="sub-list ">
-                    <li><a class="pos-top" href="./about-us.html#approach">Approach</a></li>
-                    <li><a class="pos-top" href="./about-us.html#funds">Funds</a></li>
-                    <li><a class="pos-top" href="./about-us.html#sectors">Sectors</a></li>
-                    <li><a class="pos-top" href="./about-us.html#awards">Awards</a></li>
-                    <li><a class="pos-top" href="./about-us.html#reach">Locations</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
+              <div class="login-search">
+            
+                <a href="#!" class="login-btn" target="_blank" rel="noopener noreferrer">
+                  Join The Club
+                </a>
+              </div>
+          </div>
         </div>
-        </div>
-      </div> -->
+      </header>
+      
       <main class="main-warpper home-page" >
-        <!-- <img src="<%= require('./img/king.png') %>" alt=""> -->
         <section class="banner-section">
           <div class="container">
             <div class="di-flex">
@@ -490,53 +692,52 @@
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-3.png" alt="">
+                                  <img src="<%= require('./img/lft-img-3.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
-                                          alt=""></a>
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>" alt=""></a>
                               </div>
                             </div>
                           </div>
                           <div class="item" data-dot="<button>3</button>">
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-1.png" alt="">
+                                  <img src="<%= require('./img/lft-img-1.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-2.png" alt="">
+                                  <img src="<%= require('./img/lft-img-2.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-3.png" alt="">
+                                  <img src="<%= require('./img/lft-img-3.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
@@ -566,34 +767,34 @@
                           <div class="item" data-dot="<button>1</button>">
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-1.png" alt="">
+                                  <img src="<%= require('./img/lft-img-1.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-2.png" alt="">
+                                  <img src="<%= require('./img/lft-img-2.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-3.png" alt="">
+                                  <img src="<%= require('./img/lft-img-3.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
@@ -601,34 +802,34 @@
                           <div class="item" data-dot="<button>2</button>">
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-1.png" alt="">
+                                  <img src="<%= require('./img/lft-img-1.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
+                                          alt=""></a>
+                              </div>
+                            </div>
+                            <div class="cas-in">  
+                              <div class="lft-img">
+                                  <img src="<%= require('./img/lft-img-2.png') %>" alt="">
+                              </div>
+                              <div class="lft-txt">
+                                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                  </p>
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-2.png" alt="">
+                                  <img src="<%= require('./img/lft-img-3.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
-                                          alt=""></a>
-                              </div>
-                            </div>
-                            <div class="cas-in">
-                              <div class="lft-img">
-                                  <img src="./img/lft-img-3.png" alt="">
-                              </div>
-                              <div class="lft-txt">
-                                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
-                                  </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
@@ -636,34 +837,34 @@
                           <div class="item" data-dot="<button>3</button>">
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-1.png" alt="">
+                                  <img src="<%= require('./img/lft-img-1.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-2.png" alt="">
+                                  <img src="<%= require('./img/lft-img-2.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
                             <div class="cas-in">
                               <div class="lft-img">
-                                  <img src="./img/lft-img-3.png" alt="">
+                                  <img src="<%= require('./img/lft-img-3.png') %>" alt="">
                               </div>
                               <div class="lft-txt">
                                   <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                                   </p>
-                                  <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                                  <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                           alt=""></a>
                               </div>
                             </div>
@@ -694,34 +895,34 @@
                   <div class="item" data-dot="<button>1</button>">
                     <div class="cas-in">
                       <div class="lft-img">
-                          <img src="./img/lft-img-1.png" alt="">
+                          <img src="<%= require('./img/lft-img-1.png') %>" alt="">
                       </div>
                       <div class="lft-txt">
                           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                           </p>
-                          <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                          <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                   alt=""></a>
                       </div>
                     </div>
                     <div class="cas-in">
                       <div class="lft-img">
-                          <img src="./img/lft-img-2.png" alt="">
+                          <img src="<%= require('./img/lft-img-2.png') %>" alt="">
                       </div>
                       <div class="lft-txt">
                           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                           </p>
-                          <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                          <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                   alt=""></a>
                       </div>
                     </div>
                     <div class="cas-in">
                       <div class="lft-img">
-                          <img src="./img/lft-img-3.png" alt="">
+                          <img src="<%= require('./img/lft-img-3.png') %>" alt="">
                       </div>
                       <div class="lft-txt">
                           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                           </p>
-                          <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                          <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                   alt=""></a>
                       </div>
                     </div>
@@ -729,34 +930,34 @@
                   <div class="item" data-dot="<button>2</button>">
                     <div class="cas-in">
                       <div class="lft-img">
-                          <img src="./img/lft-img-1.png" alt="">
+                          <img src="<%= require('./img/lft-img-1.png') %>" alt="">
                       </div>
                       <div class="lft-txt">
                           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                           </p>
-                          <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                          <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                   alt=""></a>
                       </div>
                     </div>
                     <div class="cas-in">
                       <div class="lft-img">
-                          <img src="./img/lft-img-2.png" alt="">
+                          <img src="<%= require('./img/lft-img-2.png') %>" alt="">
                       </div>
                       <div class="lft-txt">
                           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                           </p>
-                          <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                          <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                   alt=""></a>
                       </div>
                     </div>
                     <div class="cas-in">
                       <div class="lft-img">
-                          <img src="./img/lft-img-3.png" alt="">
+                          <img src="<%= require('./img/lft-img-3.png') %>" alt="">
                       </div>
                       <div class="lft-txt">
                           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                           </p>
-                          <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                          <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                   alt=""></a>
                       </div>
                     </div>
@@ -764,41 +965,41 @@
                   <div class="item" data-dot="<button>3</button>">
                     <div class="cas-in">
                       <div class="lft-img">
-                          <img src="./img/lft-img-1.png" alt="">
+                          <img src="<%= require('./img/lft-img-1.png') %>" alt="">
                       </div>
                       <div class="lft-txt">
                           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                           </p>
-                          <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                          <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                   alt=""></a>
                       </div>
                     </div>
                     <div class="cas-in">
                       <div class="lft-img">
-                          <img src="./img/lft-img-2.png" alt="">
+                          <img src="<%= require('./img/lft-img-2.png') %>" alt="">
                       </div>
                       <div class="lft-txt">
                           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                           </p>
-                          <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                          <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                   alt=""></a>
                       </div>
                     </div>
                     <div class="cas-in">
                       <div class="lft-img">
-                          <img src="./img/lft-img-3.png" alt="">
+                          <img src="<%= require('./img/lft-img-3.png') %>" alt="">
                       </div>
                       <div class="lft-txt">
                           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                           </p>
-                          <a class="arrow" href="#"> Book Now <img src="./img/arrow.png"
+                          <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
                                   alt=""></a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -994,16 +1195,16 @@
           </p>
           <div class="social-madia">
             <a href="#!">
-              <img src="./img/facebook.svg" alt="">
+              <img src="<%= require('./img/facebook.svg') %>" alt="">
             </a>
             <a href="#!">
-              <img src="./img/yt.svg" alt="">
+              <img src="<%= require('./img/yt.svg') %>" alt="">
             </a>
             <a href="#!">
-              <img src="./img/in.svg" alt="">
+              <img src="<%= require('./img/in.svg') %>" alt="">
             </a>
             <a href="#!">
-              <img src="./img/tw.svg" alt="">
+              <img src="<%= require('./img/tw.svg') %>" alt="">
             </a>
           </div>
       
