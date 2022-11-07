@@ -19,6 +19,10 @@ const htmlPageNames = [
   {
     pageName: 'detail.html',
     title: 'Club Mahindra'
+  },
+  {
+    pageName: 'individual.html',
+    title: 'Club Mahindra'
   }, 
 ];
 let htmlFileName = htmlPageNames.map(htmlPage=> htmlPage.pageName);

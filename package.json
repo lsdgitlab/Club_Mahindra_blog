@@ -42,6 +42,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "accordion-js": "^3.3.2",
     "bigpicture": "^2.6.2",
     "gsap": "^3.11.3",
     "jquery": "^3.6.1",

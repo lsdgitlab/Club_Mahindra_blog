@@ -91,7 +91,7 @@
       }
       .col-input {
         margin-bottom: 10px;
-        width: 46%;
+        width: 48%;
         margin: 0 0% 12px 0%;
         position: relative;
         top: 0;
@@ -514,4 +514,116 @@
     margin-bottom: 24px;
     // &:not()
   }
+  .read-more{
+    display: none;
+    text-align: center;
+  }
+}
+@media (max-width: 1199.98px) { 
+  .visit-place-section .sub-h-1 {
+    font-size: 16px;
+  }
+  .largest-section .blog-carousel .item {
+    margin: 0px;
+  }
+}
+@media (max-width: 991.98px) {
+  .banner-section article {
+    width: 100%;
+  }
+  .banner-section article .cat-row {
+    overflow-x: auto;
+    justify-content: left;
+    padding: 0 8px;
+  }
+  .banner-section article .cat-row a {
+    white-space: nowrap;
+  }
+  .banner-section article .banner-item h2 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+  }
+  .banner-section aside {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .banner-section aside .form-container h2 {
+    font-size: 14px;
+  }
+  .banner-section aside .form-container .form-content {
+    justify-content: space-between;
+  }
+  .category-section {
+    margin-top: 32px;
+  }
+  .category-section .cat-box {
+    padding: 16px;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .category-section .cat-box .content .text h2 {
+    font-size: 16px;
+  }
+  .largest-section .title-box {
+    padding: 0;
+  }
+  .largest-section .blog-carousel .item {
+    box-shadow:none; 
+    // background-color: #ffffff;
+    // margin: 16px;
+  }
+  .blog-carousel{
+    box-shadow: 0 0 15px rgb(5 5 5 / 5%);
+  }
+  .largest-section {
+    margin: 32px 0;
+  }
+  .largest-section .blog-carousel .item .content {
+    padding: 24px 24px 16px 24px;
+  }
+  .visit-place-section .left-side, .visit-place-section .visit-out, .visit-place-section .right-side {
+    width: 100%;
+  }
+  .visit-place-section .visit-out:first-child{
+    border: none;
+    border-bottom: 1px solid #0000002a;
+
+  }
+  .visit-place-section .check-out{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 20px 0;
+  }
+  .visit-place-section .bplace{
+    padding: 0 24px;
+  }
+  .visit-place-section .right-side{
+    margin-top: 24px;
+    .check-out {
+      padding: 24px;
+    }
+  }
+  .about-club {
+    padding:0;
+    padding-bottom: 24px;
+  }
+  .visit-place-section{
+    margin: 16px 0;
+  }
+  .banner-section article .banner-item .content {
+    padding: 0 28px;
+  }
+  .banner-section article .banner-item {
+    height: 200px;
+    .bg-img{
+      height: 100%;
+    }
+  }
+  .about-club .read-more{
+    display: block;
+  }
+  // .about-club .text:nth-child(3){
+  //   background-color: red;
+  // }
 }
