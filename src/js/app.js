@@ -3,6 +3,7 @@ import $ from "jquery";
 import 'owl.carousel';
 import lozad from 'lozad';
 import  "./accordion"; 
+import Accordion from "accordion-js";
 
 const observer = lozad();
 observer.observe();
@@ -155,3 +156,6 @@ if ($('#journeyCarousel').length) {
   })
 };
 // import "./page-animation/barba";
+
+
+new Accordion('.accordion-container');

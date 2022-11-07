@@ -25,6 +25,7 @@ body {
   'base/typography',
   'base/helpers';
 
+@import 'accordion-js/dist/accordion.min.css';
 
 // // 4. Layout-related sections
 @import
@@ -38,7 +39,10 @@ body {
 // // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/detail';
+  'pages/detail',
+  'pages/individual';
+
+
 
 // // 7. Themes
 @import

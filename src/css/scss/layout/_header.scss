@@ -392,15 +392,18 @@
       text-align: center;
       color: #FFFFFF;
       display: inline-block;
-      padding: 12px 20px;
+      vertical-align: middle;
+      padding: 0 20px;
+      line-height: 40px;
       position: relative;
       top: 0;
       left: 0;
       margin-right: 8px;
       transition: all 0.3s ease;
+      box-sizing: border-box;
         
       font-size: 14px;
-      line-height: 1.5;
+      // line-height: 1.5;
       color: #ffffff;
       font-weight: 500;
       font-family: "SF Pro Display";
