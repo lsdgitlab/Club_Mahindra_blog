@@ -14,4 +14,24 @@ function playPause(video) {
     else 
         video.pause(); 
 } 
-export { gotoId, playPause}
+function submitData(formName){
+    let valid = true;
+    // console.log("22222")
+    $("#"+formName+" :input[required]").each(function(){
+      var input = $(this); 
+      // console.log(input)
+      if ($(this).is(':invalid') || !$(this).val()){
+        valid = false;
+        $(this).addClass('error').focus();
+        $(this).parent().addClass('error');
+        // $(this).parent().siblings('.invalid').show()
+        // console.log(valid)
+      }
+    });
+    if(valid) {
+      console.log("form valid")
+      // $('#thankpop').popup('show');
+      // $("#formCotainer").toggle();
+    }
+  }
+export { gotoId, playPause, submitData}

@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -56,6 +56,7 @@ module.exports = (env, argv) => ({
         patterns: [
           // {from: 'src/*.html', to: '[name].[ext]'},
           // { from: './src/assets/background', to: './assets/background' },
+          { from: "./src/img/component", to: "./img/component" },
           { from: "./src/img/bg", to: "./img/bg" },
           { from: "./src/video", to: "./video" },
           { from: "./src/assets/vendors/webfonts", to: "./assets/vendors/webfonts" },
@@ -159,16 +160,16 @@ module.exports = (env, argv) => ({
       // filename: 'assets/app.css',
       filename: argv.mode ? "./css/scss/[name].[contenthash].css" : "./css/scss/[name].[contenthash].css",
     }),
-    // new HtmlWebpackPartialsPlugin({
-    //   path:path.join(__dirname,'./src/header.html'),
-    //   location:'header',
-    //   template_filename: htmlFileName
-    // }),
-    // new HtmlWebpackPartialsPlugin({
-    //     path:path.join(__dirname,'./src/footer.html'),
-    //     location:'footer',
-    //     template_filename: htmlFileName
-    // }),
+    new HtmlWebpackPartialsPlugin({
+      path:path.join(__dirname,'./src/header.html'),
+      location:'header',
+      template_filename: htmlFileName
+    }),
+    new HtmlWebpackPartialsPlugin({
+        path:path.join(__dirname,'./src/footer.html'),
+        location:'footer',
+        template_filename: htmlFileName
+    }),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
