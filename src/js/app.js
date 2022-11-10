@@ -1,5 +1,5 @@
 // console.log("webpack")
-import $ from "jquery";
+import $, { get } from "jquery";
 import 'owl.carousel';
 import lozad from 'lozad';
 // import  "./accordion"; 
@@ -11,6 +11,28 @@ const observer = lozad();
 observer.observe();
 
 import { submitData} from "./main";
+// console.log("AllowOnlyNumbers")
+// console.log($('.form-control[type=tel]').get(0))
+// console.log($('.allNumber[type=tel]'))
+// const input = document.querySelector('.allNumber[type=tel]');
+// console.log(input)
+// 
+// AllowOnlyNumbers()
+
+// console.log()
+// $('.form-control[type=tel]').on('onkeypress', function(){
+//   console.log("clcik")
+// })
+// $('.form-control[type=tel]')
+// $('.form-control[type=tel]').get(0).addEventListener('keypress', function(el){
+//   console.log("clcik")
+//   console.log(el)
+//   AllowOnlyNumbers(el)
+// })
+$('.form-control[type=tel]').on('input', function (e) {
+  $(this).val($(this).val().replace(/[^0-9]/g, ''));
+});
+$('.form-control[type=tel]')
 if ($('#bannerCarousel').length) {
   let bannerCarousel = $("#bannerCarousel").owlCarousel({
     margin:0,
@@ -66,19 +88,30 @@ if ($('#blogCarousel').length) {
       },
     }
   })
-  // $('#blog-section .prev-nav').on('click', function(){
-  //   console.log(".prev-nav")
-  //   blogCarousel.trigger('prev.owl.carousel');
-  //   console.log(blogCarousel)
-  // })
-  // // Go to the previous item
-  // $('#blog-section .next-nav').on('click',function() {
-  //   console.log(".next-nav")
-
-  //   blogCarousel.trigger('next.owl.carousel');
-  // })
 };
-
+if ($('#otherCategory').length) {
+  let otherCategory = $("#otherCategory").owlCarousel({
+    margin: 24,
+    items: 3,
+    dots:false,
+    nav:true,
+    // center:true,
+    navText: ["<i class='arrow left'></i>","<i class='arrow right'></i>"],
+    autoplayTimeout: 5000,
+    // loop:true,
+    smartSpeed: 2000,
+    responsive:{
+      0:{
+          items:1,
+          // margin: 24,
+      },
+      992:{
+        items:3,
+        // margin: 0,
+      },
+    }
+  })
+};
 
 
 if ($('#visiteCarousel').length) {
@@ -228,7 +261,7 @@ if($('.accordionFaq').length)
   new Accordion('.accordionFaq');
 
 ;(function () {
-  setClickHandler('journeyCarousel', function (e) {
+  setClickHandler('playPopupYtVid', function (e) {
     // console.log(e)
     // console.log(e)
     var className = e.target.className
@@ -306,6 +339,22 @@ $('#mutiStepForm').popup({
   event.preventDefault();
   event.stopPropagation();
 });
+$(function () {
+  $(".category-page-section .cat-box").slice(0, 9).show();
+  $(".readMoreCat").on('click', function (e) {
+      e.preventDefault();
+      $(".category-page-section .cat-box:hidden").slice(0, 3).slideDown();
+      if ($(".category-page-section .cat-box:hidden").length == 0) {
+        // $("#load").fadeOut('slow');
+        $(this).hide()
+      }
+      // console.log($(this))
+      // $(this).hide()
+      // $('html,body').animate({
+      //     scrollTop: $(this).offset().top
+      // }, 1500);
+  });
+});
 // $('#mutiStepForm').popup('show');
 $(document).ready(function(){
   $(window).scroll(function() {
@@ -320,4 +369,5 @@ $(document).ready(function(){
     }
   });
 });
+// $("#shareIconBtn")
 // $('#mutiStepForm').popup('show');

@@ -203,22 +203,107 @@
   }
 
 }
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
 .scroll-top {
-  background-color: #35332d;
-  border: 2px solid #fff;
   position: fixed;
-  width: 45px;
-  height: 45px;
   bottom: 60px;
-  right: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  width: 60px;
-  height: 60px;
+  right: 60px;
   border-radius: 30px;
-  background-color: #f7992c;
+  overflow: hidden;
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  .hover-btn{
+    background-color: #35332d;
+    border: 2px solid #fff;
+    width: auto;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #f7992c;
+    cursor: pointer;
+    // margin-left: auto;
+  }
+  .share-icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #f7992c;
+    height: 100%;
+    width: 0;
+    padding: 12px 70px 12px 12px;
+    border-radius: 50px;
+    // border-bottom-left-radius: 50px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 5%);
+    display: none;
+    transition: width 2s;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    animation: animate__fadeInRight;
+    animation-duration: 1s;
+    a{
+      height: auto;
+      width: 32px;
+      margin: 0 8px;
+      display: inline-block;
+      svg{
+        // width: 100%;
+        
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+        width: auto;
+      }
+      &:hover .icon {
+        fill: #fff;
+      }
+    }
+  }
+  &:hover{
+    .share-icon{
+      display: flex;
+      width: auto;
+      animation: fadeInRight;
+      animation-duration: 1s;
+    }
+  }
 }
 .popup-form{
 
@@ -239,6 +324,10 @@
     line-height: 32px;
     color: #000000;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
   .form-container .col-input{
     width: 100%;

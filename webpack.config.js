@@ -21,6 +21,10 @@ const htmlPageNames = [
     title: 'Club Mahindra'
   },
   {
+    pageName: 'category-listing.html',
+    title: 'Club Mahindra'
+  },
+  {
     pageName: 'individual.html',
     title: 'Club Mahindra'
   }, 
