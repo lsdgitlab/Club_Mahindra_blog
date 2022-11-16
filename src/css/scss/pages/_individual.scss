@@ -1,10 +1,62 @@
 .txt-left {
     text-align: left;
 }
-
+.indiv-page{
+    .banner-section article .banner-item .content{
+        align-items: flex-end;
+        padding-bottom: 48px;
+    }
+    .banner-section article .banner-item .content .post-author{
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 8px;
+        .autor-img{
+            width: 24px;
+            height: auto;
+            border-radius: 50px;
+            margin: 0;
+            margin-right: 8px;
+        }
+        .name{
+            opacity: 0.8;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        
+        }
+    }
+    .brad-section{
+        margin-bottom: 24px;
+    }
+    .breadcrumb{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0;
+        margin-bottom: 1rem;
+        list-style: none;
+        margin: 8px 0;
+        .breadcrumb-item{
+            font-size: 14px;
+            a{
+                color: #f7992c;
+            }
+        }
+        .breadcrumb-item+.breadcrumb-item {
+            padding-left: 0.5rem;
+            color: #000000;
+        }
+        .breadcrumb-item+.breadcrumb-item::before {
+            float: left;
+            padding-right: 0.5rem;
+            color: #6c757d;
+            content: var(--bs-breadcrumb-divider, ">");
+        }
+    }
+}
 
 .grid-container {
-    margin: 70px 0 30px;
+    margin: 48px 0 30px;
 
     h2 {
         font-family: "SF Pro Display";
@@ -34,6 +86,7 @@
             padding: 40px 35px;
             -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
             box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
         }
 
         .blog-content {
@@ -48,7 +101,7 @@
             p {
                 color: $black;
                 line-height: 26px;
-                margin: 0 0 45px;
+                margin: 0 0 32px;
 
                 &:last-child {
                     margin-bottom: 10px;
@@ -56,7 +109,9 @@
             }
 
             img {
-                margin-bottom: 45px;
+                margin-bottom: 24px;
+                cursor: pointer;
+                width: 100%;
             }
 
             .blog-date {
@@ -80,7 +135,33 @@
                     vertical-align: middle;
                 }
             }
-
+            .cta-btn-container{
+                justify-content: start;
+                .cta-btn{
+                    border: none;
+                    cursor: pointer;
+                    color: rgb(255, 255, 255);
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 700;
+                    font-size: 14px;
+                    letter-spacing: normal;
+                    line-height: 1.43;
+                    height: 48px;
+                    width: 245px;
+                    text-align: center;
+                    border-radius: 3px;
+                    padding: 0px;
+                    background-color: #f7992c;
+                    margin-right: 24px;
+                    margin-bottom: 16px;
+                    // text-transform: upp ercase;
+                }
+                .hotel{
+                    background-color: #ffffff;  
+                    border: 2px solid #f7992c;
+                    color: #000000;
+                }
+            }
         }
 
         .faq {
@@ -191,7 +272,11 @@
 
     }
 }
-
+.blog-date{
+    img{
+        width: auto;
+    }
+}
 .abt-club {
     .sm-box {
         padding: 25px 20px 30px;
@@ -199,7 +284,9 @@
         background-color: rgb(255, 255, 255);
         box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
         margin-bottom: 25px;
-
+        .read-more{
+            display: none;
+        }
         .cb-title {
             margin-bottom: 20px;
         }
@@ -209,7 +296,7 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 23px;
-
+            margin-bottom: 8px;
             strong {
                 color: $black;
             }
@@ -318,7 +405,13 @@
         }
     }
 }
-
+.date-text{
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
 
 @media (max-width: 991.98px) {
     .grid-container {
@@ -440,10 +533,72 @@
                 .blog-date {
                     margin-bottom: 20px;
                 }
+                
             }
 
         }
 
     }
-
+    .grid-container .flex-containt .blog-content h2{
+        font-size: 18px;
+    }
+    .grid-container .flex-containt .blog-content .blog-date {
+        margin-bottom: 8px;
+    }
+    .grid-container .flex-containt .blog-content p {
+        margin-bottom: 16px;
+    }
+    .grid-container .flex-containt .blog-content img {
+        margin-bottom: 18px;
+    }
+    .grid-container .flex-containt .white-card {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    .grid-container .flex-containt .faq h2 {
+        font-size: 18px;
+    }
+    .grid-container .flex-containt .abt-club .sm-box {
+        padding: 16px 16px 18px;
+    }
+    .abt-club .sm-box .cb-title, .check-out-blogs .cb-title {
+        margin-bottom: 16px;
+    }
+    .check-out-details .lft-txt p{
+        line-height: 1.5;
+        margin-bottom: 0px;
+    }
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 0;
+    }
+    .grid-container .flex-containt .check-out-details, .grid-container .flex-containt .check-out-blogs {
+        padding: 16px 20px 16px;
+    }
+    .check-out-details .cas-in:last-child, .visit-place-section .cas-in:last-child{
+        margin-bottom: 16px;
+    }
+    .visit-place-section .check-out {
+        margin-bottom: 0;
+    }
+    // .visit-place-section .cas-in {
+    //     display: flex;
+    //     margin-bottom: 30px;
+    // }
+    .abt-club .sm-box .read-more {
+        display: block;
+    }
+    .indiv-page .brad-section {
+        margin-top: 80px;
+    }
+    .indiv-page .banner-section article .cat-row{
+        bottom: -90px;
+    }
+}
+@media (max-width: 575.98px) {
+    .indiv-page .banner-section article .cat-row {
+        bottom: -36px;
+    }
+    .indiv-page .brad-section {
+        margin-top: 0;
+    }
 }

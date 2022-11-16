@@ -222,7 +222,7 @@
       font-size: 14px;
       line-height: 20px;
       font-weight: 600;
-      margin-bottom: 14px;
+      margin-bottom: 0;
       color: #000000;
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -259,4 +259,8 @@
     background-color: #f7992c;
     
   }
+  
+}
+.check-out-details .cas-in:last-child{
+  margin-bottom: 16px;
 }

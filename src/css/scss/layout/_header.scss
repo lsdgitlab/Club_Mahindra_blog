@@ -112,8 +112,9 @@
   box-shadow: 0 0 25px rgba(0,0,0,0.1);
   padding: 8px 0;
   // position: sticky;
-  position: relative;
+  position: sticky;
   margin-bottom: 24px;
+  z-index: 2;
   &.fixed-header{
     // position: fixed;
     position: sticky;
@@ -514,6 +515,9 @@
 .desk-menu{
   display: block;
 }
+// .height-menu{
+//   height: 80px;
+// }
 @media (max-width: 1199.98px) { 
   .acc-header .nav-bar .link {
     padding: 23px 12px 24px 12px;

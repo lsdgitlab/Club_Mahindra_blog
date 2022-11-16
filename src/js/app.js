@@ -360,10 +360,13 @@ $(document).ready(function(){
   $(window).scroll(function() {
     if ($(this).scrollTop() > 800) {
       $('.sticky-btn-book-apt').addClass('sticky-block');
+      $('#top-menu').addClass('animate__fadeInDown')
       // $('.get-start-fix').addClass('fix-btn-block');
 
     } else {
       $('.sticky-btn-book-apt').removeClass('sticky-block');
+      $('#top-menu').removeClass('animate__fadeInDown')
+
       // $('.get-start-fix').removeClass('fix-btn-block');
 
     }

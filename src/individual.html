@@ -12,43 +12,38 @@
   </head>
   <body data-barba="wrapper">
 
-    <div class="wrapper" data-barba="container" data-barba-namespace="home" id="playPopupYtVid">
+    <div class="wrapper indiv-page" data-barba="container" data-barba-namespace="home" id="playPopupYtVid">
       <header class="acc-header inernal-click" id="top-menu">
         
       </header>
       
-      <main class="main-warpper home-page" >
+      <main class="main-warpper home-page " >
         <section class="banner-section">
           <div class="container">
             <div class="di-flex">
               <article>
-                <div id="bannerCarousel" class="owl-carousel owl-theme banner-carousel">
+                <div class="banner-carousel">
                   <div class="item">
                     <div class="banner-item">
                       <img src="<%= require('./img/bg/banner-1.jpg') %>" alt="" class="bg-img">
                       <div class="content">
                         <div class="text-content">
-                          <h1><a href="#!">It’s Time for Music Lovers to Unite <br>
-                          Welcome to Arunachal Pradesh’s <br>
-                          Ziro Music Festival</a></h1>
+                          <p class="date-text">MARCH 12, 2021</p>
+                          <h1><a href="#!">Top 10 Places to visit in Pune</a></h1>
+                          <a class="di-flex post-author">
+                            <img src="<%= require('./img/avtar.png') %>" alt="" class="autor-img">
+                            <p class="name">Richa Asthana Prakash</p>
+                          </a>
+                          <div class="blog-date">
+                            <img src="<%= require('./img/star-rating.png') %>" alt="" class="">
+                          </div>
+
                           <!-- <a href="#!" class="read-more">Read More <i class="arrow right"></i></a> -->
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="item">
-                    <div class="banner-item">
-                      <img src="<%= require('./img/bg/banner-1.jpg') %>" alt="" class="bg-img">
-                      <div class="content">
-                        <div class="text-content">
-                          <h1><a href="#!">It’s Time for Music Lovers to Unite <br>
-                          Welcome to Arunachal Pradesh’s <br>
-                          Ziro Music Festival</a> </h1>
-                          <!-- <a href="#!" class="read-more">Read More <i class="arrow right"></i></a> -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
                 <div class="cat-row">
                   <a href="#!">Experiences</a> | 
@@ -112,38 +107,66 @@
                 </div>
               </aside>
           </div>
-
+          
+          <!-- Budget Hotels > Travel Blog > Destinations > Goa > 10 Things To Do In Goa For Couples That Go Beyond The Beach -->
         </div>
         </section>
+        
         <section class="grid-container">
           <div class="container">
               <div class="d-flex flex-containt">
                   <div class="lt-side">
-                      <div class="white-card blog-content">
-                          <h2>Top 10 Places to visit in Pune</h2>
-
-                          <div class="blog-date">
-                              <img src="<%= require('./img/date-picker-icon.png') %>" alt="" class=""><span>09 June 2018</span><img src="<%= require('./img/star-rating.png') %>" alt="" class="">
-                          </div>
-                          
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                          
+                    <!-- <section class="brad-section"> -->
+                      <div class="brad-section">
+                        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                            <li class="breadcrumb-item"><a href="#">Places to visit</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Top 10 Places to visit in Pune</li>
+                          </ol>
+                        </nav>
+                      </div>
+                    <!-- </section> -->
+                    <div class="blog-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+                    </div>
+                    <div >
+                      <div class=" blog-content">
+                         <h2 class="cb-title"> 1. Have Breakfast with the Dolphins</h2>
                           <div class="thumbail">
                               <img src="<%= require('./img/individual-image.jpg') %>" alt="" class="bg-img youtube" ytSrc="37s__XQyHsg">
                           </div>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+                          <div class="di-flex cta-btn-container">
+                            <button class="cta-btn">Resorts In Maharashtra</button>
+                          </div>
+                        </div>
 
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-
+                      <div class=" blog-content">
+                            <h2 class="cb-title"> 2. Have Breakfast with the Dolphins</h2>
+                            <div class="thumbail" >
+                                <div class="thumbail">
+                                    <img src="<%= require('./img/individual-poster.jpg') %>" alt="" class="bg-img youtube" ytSrc="37s__XQyHsg">
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor</p>
+                            
+                      </div>
+                      <div class="blog-content">
+                          <h2 class="cb-title"> 3. Cruise on the Chapora River</h2>
                           <div class="thumbail" >
                               <div class="thumbail">
                                   <img src="<%= require('./img/individual-poster.jpg') %>" alt="" class="bg-img youtube" ytSrc="37s__XQyHsg">
                               </div>
                           </div>
-
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor</p>
-
-
-                      </div>
+                          <div class="di-flex cta-btn-container">
+                            <button class="cta-btn">Become A Member</button>
+                          </div>
+                    </div>
+                    
+                    </div>
 
                       <div class="white-card faq">
                           <h2>Frequently Asked Questions</h2>
@@ -195,22 +218,27 @@
 
                       <div class="abt-club">
                           <div class="sm-box">
-                              <h3 class="cb-title">About Club Mahindra</h3>
-                              <p class="text-p">Mahindra Holidays & Resorts India Ltd. (MHRIL), a part of Leisure and
-                                  Hospitality sector of the Mahindra Group, offers quality family holidays primarily
-                                  through vacation ownership memberships and brings to the industry values such as
+                              <h2 class="cb-title">About Club Mahindra</h2>
+                              <!-- <p class="text-p">Mahindra Holidays & Resorts India Ltd. (MHRIL), a part of Leisure and
+                                 Hospitality sector of the Mahindra Group, offers quality family holidays primarily
+                                  <span class="s-dis-none"> through vacation ownership memberships and brings to the industry values such as
                                   reliability, trust and customer satisfaction. Started in 1996, the company's flagship
                                   brand ‘Club Mahindra’, today has over <strong> 250,000 members ,</strong> who can
                                   holiday at <strong>100+ resorts</strong>
-                                  in India and abroad.
+                                  in India and abroad.</span>
                                   <br>
-                                  <a href="index.html#about-cm" class="read-link">Read More <img src="img/arrow-2f7817.png" alt=""></a>
+                                  <a href="index.html#about-cm" class="read-link">Read More <img src="img/arrow-2f7817.png" alt=""></a> -->
+                                  <p class="text-p">Mahindra Holidays & Resorts India Ltd. (MHRIL), a part of Leisure and Hospitality sector of the Mahindra Group, offers quality family holidays primarily through <span class="text s-dis-none"> vacation ownership memberships and brings to the industry values such as reliability, trust and customer satisfaction. Started in 1996, the company's flagship brand ‘Club Mahindra’, today has over <strong> 250,000 members</strong> , who can holiday at <strong> 100+ resorts </strong> in India and abroad.</span></p>
+                                  <p class="text-p s-dis-none">Mahindra Holidays & Resorts India Limited is part of Mahindra Group. The Mahindra Group of companies enable people to rise through innovative mobility solutions, driving rural prosperity, enhancing urban living, nurturing new businesses and fostering communities. It enjoys a leadership position in utility vehicles, information technology, financial services and vacation ownership in India and is the world's largest tractor company by volume. It also enjoys a strong presence in renewable energy, agribusiness, logistics and real estate development. Headquartered in India, Mahindra employs over <br> <strong> 2,56,000 people across 100 countries. </strong></p>
+                                  <p>
+                                    <a href="#!" class="read-more readMore">Read More <i class="arrow right"></i></a>
+                                  </p>
                               </p>
                           </div>
                       </div>
 
                       <div class="check-out-details">
-                          <h3 class="cb-title">Checkout our resorts</h3>
+                          <h2 class="cb-title">Checkout our resorts</h2>
                           <div class="set-box">
                               <select name="" id="">
                                   <option value="">Goa</option>
@@ -335,7 +363,7 @@
                       </div>
 
                       <div class="check-out-blogs">
-                          <h3 class="cb-title">Related Blogs</h3>
+                          <h2 class="cb-title">Related Blogs</h2>
                           <div class="swt">
                               <div class="set-box-s">
                                   <select name="" id="">
@@ -374,14 +402,7 @@
                                       <p>Lorem ipsum dolor sit amet, </p>
                                   </div>
                               </div>
-                              <div class="rb-lg">
-                                  <div class="rb-stck">
-                                      <img src="<%= require('./img/lrg-4.png') %>" alt="" class="">
-                                  </div>
-                                  <div class="rb-lg-txt">
-                                      <p>Lorem ipsum dolor sit amet, </p>
-                                  </div>
-                              </div>
+                              
 
                           </div>
 
@@ -406,7 +427,7 @@
                 <div class="di-flex bplace">
                   <div class="visit-out">
                       <div class="check-out">
-                          <p class="sub-h-1">Best places to visit in India</p>
+                          <h2 class="sub-h-1">Best places to visit in India</h2>
                           <div class="set-box">
                               <select name="" id="">
                                   <option value="">By Month</option>
@@ -536,7 +557,7 @@
                   </div>
                   <div class="visit-out">
                       <div class="check-out">
-                          <p class="sub-h-1">Best places to visit outside India</p>
+                          <h2 class="sub-h-1">Best places to visit outside India</h2>
                           <div class="set-box">
                               <select name="" id="">
                                   <option value="">By Month</option>

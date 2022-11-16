@@ -243,6 +243,7 @@
   width: 300px;
   display: flex;
   justify-content: end;
+  z-index: 1;
   .hover-btn{
     background-color: #35332d;
     border: 2px solid #fff;
@@ -375,5 +376,8 @@
   }
   section#mutiStepForm {
     width: 86%;
+  }
+  .scroll-top {
+    right: 20px;
   }
 }
