@@ -66,11 +66,16 @@
       left:50%;
       // right: auto;
       transform: translateX(-50%);
-      bottom: -40px;
+      bottom: -32px;
       z-index: 1;
       width: 90%;
       display: flex;
       justify-content: center;
+      // padding: 60px;
+      .cat-nav{
+        overflow-y: auto;
+        white-space: nowrap;
+      }
       a{
         font-size: 12px;
         line-height: 60px;
@@ -273,7 +278,11 @@
   }
 }
 .category-section{
-  margin-top: 60px;
+  margin-top: 32px;
+  .cb-title{
+    text-align: center;
+    margin-bottom: 16px;
+  }
   .category-box{
     justify-content: space-between;
     margin-bottom: 16px;
@@ -437,7 +446,23 @@
 .visit-place-section{
   margin-bottom: 16px;
   .visit-flex{
-    justify-content: space-between;
+    justify-content: start;
+    .col-33{
+      width: 33.33%;
+      padding: 0 10px;
+      // &:first-child{
+      //   padding-left: 0;
+      // }
+      // &:last-child{
+      //   padding-right: 0;
+      // }
+    }
+    .check-out{
+      width: 100%;
+
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+    }
   }
   .left-side{
     width: 66%;
@@ -487,7 +512,8 @@
   .lft-img{
     width: 100%;
     max-width: auto;
-    height: auto;
+    height: auto; 
+    width: 200px;
   }
   .lft-txt p{
     font-size: 14px;
@@ -562,9 +588,18 @@
   font-size: 12px;
   padding: 8px 16px;
   border: 1px solid #000000;
+  -moz-appearance: none;
+  -webkit-appearance:none;
+  appearance: none;
+  background-image: url("../../img/bg/down-arrow.png");
+  background-position: 96% 50%;
+  background-repeat: no-repeat;
+  background-size: 8px;
+  // color: #000000;
+  // color: #888888;
 }
 .about-club{
-  padding: 40px 0 60px 0;
+  padding: 24px 0;
   .content{
     width: 100%;
     max-width: 940px;
@@ -591,7 +626,33 @@
     text-align: center;
   }
 }
-@media (max-width: 1199.98px) { 
+.category-carousel{
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  .item{
+    height: auto !important;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 8px;
+    &::after {
+      content: "|";
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    &:last-child, &:nth-last-child(2){
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 1199.98px) {
   .visit-place-section .sub-h-1 {
     font-size: 16px;
     margin-bottom: 16px;
@@ -607,7 +668,29 @@
   .banner-section article .cat-row a {
     margin: 0 4px;
   } 
+  .banner-section article .banner-item h1 a {
+    font-size: 20px;
+  }
+  .banner-section article .cat-row {
+    overflow-x: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    .scrollBtn{
+      display: block;
+    }
+    .cat-nav{
+      overflow-y: auto;
+      width: 80%;
+      white-space: nowrap;
+      padding: 0 8px;
+    }
+  }
+  .category-carousel {
+    justify-content: start;
+  }
 }
+
 @media (max-width: 991.98px) {
   .banner-section article {
     width: 100%;
@@ -615,14 +698,15 @@
   .largest-section .blog-carousel .item {
     margin: 0px;
   }
-  .banner-section article .cat-row {
-    overflow-x: auto;
-    justify-content: left;
-    padding: 0 8px;
-  }
+  
   .banner-section article .cat-row a {
     white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    // width: 90%;
+    
   }
+  
   .banner-section article .banner-item h2 a{
     font-size: 16px;
     line-height: 1.5;
@@ -736,5 +820,49 @@
   }
   .about-club .text {
     margin-bottom: 12px;
+  }
+ 
+  .category-carousel{
+    display: block;
+    padding: 0 24px;
+    .owl-item{
+      text-align: center;
+    }
+  //  .owl-stage {
+  //   width: 100% !important;
+  //   text-align: center;
+  //   display: flex;
+  //   justify-content: center;
+  //  }
+    .owl-item{
+      .item{
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        height: auto;
+      }
+      // &::after {
+      //   content: "|";
+      //   position: absolute;
+      //   right: 0;
+      //   top: 0;
+      // }
+      &:nth-child(odd){
+        // background-color: red;
+        &::after {
+          content: "|";
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+      &:last-child, &:nth-last-child(2){
+        &::after {
+          display: none;
+        }
+      }
+      
+    }
   }
 }

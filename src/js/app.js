@@ -117,7 +117,6 @@ if ($('#otherCategory').length) {
 if ($('#visiteCarousel').length) {
   let visiteCarousel = $("#visiteCarousel").owlCarousel({
     margin:0,
-    items: 2,
     dots:false,
     // nav:true,
     // center:true,
@@ -125,6 +124,14 @@ if ($('#visiteCarousel').length) {
     autoplayTimeout: 5000,
     // loop:true,
     smartSpeed: 2000,
+    responsive:{
+      0:{
+        items:1,
+      },
+      992:{
+        items:2,
+      },
+    }
   })
   $('#blog-section .prev-nav').on('click', function(){
     visiteCarousel.trigger('prev.owl.carousel');
@@ -145,6 +152,15 @@ if ($('#visiteCarousel1').length) {
     autoplayTimeout: 5000,
     // loop:true,
     smartSpeed: 2000,
+    responsive:{
+      0:{
+        items:1,
+      },
+      992:{
+        items:2,
+      },
+    }
+    
   })
   $('#blog-section1 .prev-nav').on('click', function(){
     visiteCarousel.trigger('prev.owl.carousel');
@@ -165,6 +181,14 @@ if ($('#visiteCarousel2').length) {
     autoplayTimeout: 5000,
     // loop:true,
     smartSpeed: 2000,
+    responsive:{
+      0:{
+        items:1,
+      },
+      992:{
+        items:2,
+      },
+    }
   })
   $('#blog-section2 .prev-nav').on('click', function(){
     visiteCarousel.trigger('prev.owl.carousel');
@@ -197,6 +221,43 @@ if ($('#journeyCarousel').length) {
 
       },
     }
+  })
+  // $('#journey-section .prev-nav').on('click', function(){
+  //   journeyCarousel.trigger('prev.owl.carousel');
+  // })
+  // // Go to the previous item
+  // $('#journey-section .next-nav').on('click',function() {
+  //   journeyCarousel.trigger('next.owl.carousel');
+  // })
+};
+
+
+
+if ($('#catNav').length && $( window ).width() < 992) {
+  let catNav = $("#catNav").owlCarousel({
+    margin:0,
+    // items: 1,
+    dots:false,
+    nav:true,
+    slideBy:2,
+    // merge:true,
+    // center:true,
+    // autoWidth:true,
+    items:2,
+    navText: ["<i class='arrow left'></i>","<i class='arrow right'></i>"],
+    loop:false,
+    
+    // responsive:{
+    //   0:{
+    //     items:2,
+        
+    //   },
+    //   992:{
+    //     autoWidth:true,
+    //     margin: 0,
+    //     nav:false,
+    //   },
+    // }
   })
   // $('#journey-section .prev-nav').on('click', function(){
   //   journeyCarousel.trigger('prev.owl.carousel');
@@ -301,11 +362,11 @@ if($('.accordionFaq').length)
 })();
 $('.gotoSection').on( "click", function(){
   let id = $(this).data("to-section");
-  gotoId(id)
+  gotoId(id);
 });
 $('.formSumit').on( "click", function(){
   let id = $(this).data("form-id");
-  submitData(id)
+  submitData(id);
 });
 $(".form-control").on("keyup change", function (event) {
   if($(this).parent().siblings('.invalid').length){
@@ -374,3 +435,55 @@ $(document).ready(function(){
 });
 // $("#shareIconBtn")
 // $('#mutiStepForm').popup('show');
+function diHiShare(){
+  // console.log(el)
+  if($("#shareIconBtn .share-icon").hasClass('active')){
+    $('#shareBtn').children().get(0).src = "./img/component/share.webp";
+    $("#shareIconBtn .share-icon").removeClass('active');
+    $('.share-backdrop').hide()
+  }else{
+    $('#shareBtn').children().get(0).src = "./img/component/cross.png"
+    $("#shareIconBtn .share-icon").addClass('active');
+    $('.share-backdrop').show();
+
+  }
+}
+;$('#shareBtn').on('click', function () {
+  // let el = $('#shareBtn').children().get(0).src;
+  // console.log(el)
+  diHiShare()
+});
+;$('.share-backdrop').on('click', function () {
+  diHiShare()
+});
+
+// script for left right scroll on mobile view of careers pages
+function sideScroll(element,direction,step){
+  if(direction == 'left'){
+      element.scrollLeft -= step;
+  } else {
+      element.scrollLeft += step;
+  }
+}
+
+$('#catNavBar .scrollBtn').on('click', function(){
+  let container = $('#catNav')[0];
+  let direction = $(this).data('scroll-dir');
+  sideScroll(container,direction,100);
+})
+
+// Show the first tab and hide the rest
+$('#tabs-nav li:first-child').addClass('active');
+$('.tab-content').hide();
+$('.tab-content:first').show();
+
+// Click function
+$('#tabs-nav li').on('click', function(){
+  $('#tabs-nav li').removeClass('active');
+  $(this).addClass('active');
+  $('.tab-content').hide();
+  
+  var activeTab = $(this).find('a').attr('href');
+  $(activeTab).fadeIn();
+  return false;
+});
