@@ -69,6 +69,7 @@
         align-items: stretch;
         .banner-carousel, .item, article .banner-item, .bg-img {
             height: 100%;
+            max-height: 325px;
         }
     }
     .banner-section article .banner-item h1 a, .banner-section article .banner-item h1{

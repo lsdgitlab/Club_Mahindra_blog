@@ -179,7 +179,7 @@ module.exports = (env, argv) => ({
       jQuery: "jquery",
       'window.jQuery': 'jquery'
     }),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ].concat(multipleHtmlPlugins),
   devServer: {
     contentBase: [

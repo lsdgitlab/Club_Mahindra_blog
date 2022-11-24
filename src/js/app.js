@@ -79,8 +79,11 @@ if ($('#blogCarousel').length) {
     smartSpeed: 2000,
     responsive:{
       0:{
-          items:1,
-          margin: 24,
+        items:1,
+        margin: 24,
+      },
+      768:{
+        items:2,
       },
       992:{
         items:3,
@@ -104,6 +107,9 @@ if ($('#otherCategory').length) {
       0:{
           items:1,
           // margin: 24,
+      },
+      768:{
+        items:2,
       },
       992:{
         items:3,
@@ -214,6 +220,10 @@ if ($('#journeyCarousel').length) {
         items:1,
         margin: 24,
 
+      },
+      768:{
+        items:2,
+        // margin: 24,
       },
       992:{
         items:3,
