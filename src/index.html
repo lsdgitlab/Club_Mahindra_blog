@@ -4,25 +4,789 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <link href="./favicon.ico" rel="icon" />
+    <link href="./favicon.png" rel="icon" />
     <meta content="" name="description" />
     <meta content="" name="keywords" />
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="icon" src="favicon.ico" />
   </head>
   <body data-barba="wrapper">
-
-    <div class="wrapper" data-barba="container" data-barba-namespace="home">
-      <header></header>
+    <div class="wrapper" data-barba="container" data-barba-namespace="home" id="playPopupYtVid">
+      <header class="acc-header inernal-click height-menu" id="top-menu">
+      </header>
       <main class="main-warpper home-page" >
-        <img src="<%= require('./img/king.png') %>" alt="">
-        
-       
-
+        <section class="banner-section">
+          <div class="container">
+            <div class="di-flex">
+              <article>
+                <div id="bannerCarousel" class="owl-carousel owl-theme banner-carousel">
+                  <div class="item">
+                    <div class="banner-item">
+                      <img data-src="<%= require('./img/bg/banner-1.jpg') %>" alt="" class="bg-img lozad">
+                      <div class="content">
+                        <div class="text-content">
+                          <h1><a href="#!">It’s Time for Music Lovers to Unite <br>
+                          Welcome to Arunachal Pradesh’s <br>
+                          Ziro Music Festival</a></h1>
+                          <!-- <a href="#!" class="read-more">Read More <i class="arrow right"></i></a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="banner-item">
+                      <img data-src="<%= require('./img/bg/banner-1.jpg') %>" alt="" class="bg-img lozad">
+                      <div class="content">
+                        <div class="text-content">
+                          <h1><a href="#!">It’s Time for Music Lovers to Unite <br>
+                          Welcome to Arunachal Pradesh’s <br>
+                          Ziro Music Festival</a></h1>
+                          <!-- <a href="#!" class="read-more">Read More <i class="arrow right"></i></a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cat-row" id="catNavBar">
+                  <nav class="owl-carousel owl-theme category-carousel" id="catNav">
+                    <div class="item">
+                      <a href="#!">Experiences</a>
+                    </div>
+                    <div class="item">
+                      <a href="#!">Places to Visit</a>
+                    </div>
+                    <div class="item">
+                      <a href="#!">Things to Do</a>
+                    </div>
+                    <div class="item">
+                      <a href="#!">For Kids</a>
+                    </div>
+                    <div class="item">
+                      <a href="#!">Food</a>
+                    </div>
+                    <div class="item">
+                      <a href="#!">Travel Stories</a>
+                    </div>
+                    <div class="item">
+                      <a href="#!">Travel Guide</a>
+                    </div>
+                    <div class="item">
+                    </div>
+                  </nav>
+                </div>
+              </article>
+              <aside>
+                <div class="form-container">
+                  <h2>Fill in the form below & we’ll reach out!</h2>
+                  <form class="form-content" id="connectUs">
+                    <div class="col-input">
+                      <div class="control">
+                        <input type="text" class="form-control" name="fname" id="fname" placeholder="Name"
+                         required>
+                      </div>
+                      <p class="invalid">Please enter the valid name.</p>
+                    </div>
+                    <div class="col-input">
+                      <div class="control">
+                        <input class="form-control allNumber" type="tel" placeholder="Mobile Number" maxlength="10" required>
+                      </div>
+                      <p class="invalid">Please enter the valid name.</p>
+                    </div>
+                    <div class="col-input">
+                      <div class="control">
+                        <input class="form-control" type="tel" placeholder="Age" maxlength="2" required>
+                      </div>
+                      <p class="invalid">Please enter the valid age.</p>
+                    </div>
+                    <div class="col-input">
+                      <div class="control">
+                        <input class="form-control" type="email" placeholder="Email" required>
+                      </div>
+                      <p class="invalid">Please enter the valid email.</p>
+                    </div>
+                    <div class="col-input width-100">
+                      <div class="control">
+                        <input type="text" class="form-control" required placeholder="Where are you from?">
+                      </div>
+                      <p class="invalid">Please enter the Where are you from.</p>
+                    </div>
+                    <div class="col-input select-input width-100">
+                      <div class="control">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="form-control check-box" required>
+                        <label for="vehicle1" class="label">I authorize Club Mahindra to call/email/SMS/Whatsapp me for membership plans and ongoing promotions and offers</label>
+                      </div>
+                      <p class="invalid">Please select.</p>
+                    </div>
+                  </form>
+                  <button type="submit" data-form-id="connectUs" 
+                      class="formSumit submit-btn width-100">Submit</button>
+                </div>
+              </aside>
+          </div>
+        </div>
+        </section>
+        <section class="category-section">
+          <div class="container">
+            <h2 class="cb-title">Lorem ipsum dolor sit amet consectetur </h2>
+            <div class="di-flex category-box">
+              <a href="#!" class="cat-box">
+                <div class="img-box">
+                  <img class="lozad" data-src="<%= require('./img/experiences.jpg') %>" alt="">
+                </div>
+                <div class="di-flex content">
+                  <div class="text">
+                    <h2>Experiences</h2>
+                    <p>156 Articles </p>
+                  </div>
+                  <div class="link">
+                    <div class="btn" href="#!">Explore all  <i class="arrow right"></i></div>
+                  </div>
+                </div>
+              </a>
+              <a href="#!" class="cat-box">
+                <div class="img-box">
+                  <img class="lozad" data-src="<%= require('./img/Places-to-Visit.jpg') %>" alt="">
+                </div>
+                <div class="di-flex content">
+                  <div class="text">
+                    <h2>Places to Visit</h2>
+                    <p>56 Articles</p>
+                  </div>
+                  <div class="link">
+                    <div class="btn" href="#!">Explore all  <i class="arrow right"></i></div>
+                  </div>
+                </div>
+              </a>
+              <a href="#!" class="cat-box">
+                <div class="img-box">
+                  <img class="lozad" data-src="<%= require('./img/Things-to-do.jpg') %>" alt="">
+                </div>
+                <div class="di-flex content">
+                  <div class="text">
+                    <h2>Things to do</h2>
+                    <p>90 Articles</p>
+                  </div>
+                  <div class="link">
+                    <div class="btn" href="#!">Explore all  <i class="arrow right"></i></div>
+                  </div>
+                </div>
+              </a>
+              <a href="#!" class="cat-box">
+                <div class="img-box">
+                  <img src="<%= require('./img/For-Kids.jpg') %>" alt="">
+                </div>
+                <div class="di-flex content">
+                  <div class="text">
+                    <h2>For Kids</h2>
+                    <p>156 Articles </p>
+                  </div>
+                  <div class="link">
+                    <div class="btn" href="#!">Explore all  <i class="arrow right"></i></div>
+                  </div>
+                </div>
+              </a>
+              <a href="#!" class="cat-box">
+                <div class="img-box">
+                  <img src="<%= require('./img/Food.jpg') %>" alt="">
+                </div>
+                <div class="di-flex content">
+                  <div class="text">
+                    <h2>Food</h2>
+                    <p>156 Articles </p>
+                  </div>
+                  <div class="link">
+                    <div class="btn" href="#!">Explore all  <i class="arrow right"></i></div>
+                  </div>
+                </div>
+              </a>
+              <a href="#!" class="cat-box">
+                <div class="img-box">
+                  <img src="<%= require('./img/Travel-Stories.jpg') %>" alt="">
+                </div>
+                <div class="di-flex content">
+                  <div class="text">
+                    <h2>Travel Stories</h2>
+                    <p>156 Articles </p>
+                  </div>
+                  <div class="link">
+                    <div class="btn" href="#!">Explore all  <i class="arrow right"></i></div>
+                  </div>
+                </div>
+              </a>
+              <a href="#!" class="cat-box">
+                <div class="img-box">
+                  <img src="<%= require('./img/Travel-Guide.jpg') %>" alt="">
+                </div>
+                <div class="di-flex content">
+                  <div class="text">
+                    <h2>Travel Guide</h2>
+                    <p>156 Articles </p>
+                  </div>
+                  <div class="link">
+                    <div class="btn" href="#!">Explore all  <i class="arrow right"></i></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="largest-section" id="blog-section">
+          <div class="container">
+            <div class="di-flex title-box">
+              <h2 class="sub-title">Latest Blogs</h2>
+              <div class="nav-button">
+                <!-- <button class="prev-nav"><i class="arrow left"></i></button>
+                <button class="next-nav"><i class="arrow right"></i></button> -->
+              </div>
+            </div>
+            <div id="blogCarousel" class="owl-carousel owl-theme blog-carousel">
+              <div class="item">
+                <a class="banner-item" href="#!">
+                  <img src="<%= require('./img/Blogs1.jpg') %>" alt="" class="bg-img">
+                  <div class="content">
+                    <div class="text-content">
+                      <h2>Know the Important Tourist Places in and Around Wayanad</h2>
+                      <a class="catname" href="#!">Experiences</a>
+                      <p>Wayanad is a picturesque district in Kerala bordering Kozhikode district. Wayanad is the only plateau in Kerala and is mostly covered </p>
+                      <a href="#!" class="read-more">Read More <i class="arrow right"></i></a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a class="banner-item" href="#!">
+                  <img src="<%= require('./img/Blogs2.jpg') %>" alt="" class="bg-img">
+                  <div class="content">
+                    <div class="text-content">
+                      <h2>Know the Important Tourist Places in and Around Wayanad</h2>
+                      <a class="catname" href="#!">Experiences</a>
+                      <p>Wayanad is a picturesque district in Kerala bordering Kozhikode district. Wayanad is the only plateau in Kerala and is mostly covered </p>
+                      <a href="#!" class="read-more">Read More <i class="arrow right"></i></a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a class="banner-item" href="#!">
+                  <img src="<%= require('./img/Blogs3.jpg') %>" alt="" class="bg-img">
+                  <div class="content">
+                    <div class="text-content">
+                      <h2>Know the Important Tourist Places in and Around Wayanad</h2>
+                      <a class="catname" href="#!">Experiences</a>
+                      <p>Wayanad is a picturesque district in Kerala bordering Kozhikode district. Wayanad is the only plateau in Kerala and is mostly covered </p>
+                      <a href="#!" class="read-more">Read More <i class="arrow right"></i></a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a class="banner-item" href="#!">
+                  <img src="<%= require('./img/Blogs1.jpg') %>" alt="" class="bg-img">
+                  <div class="content">
+                    <div class="text-content">
+                      <h2>Know the Important Tourist Places in and Around Wayanad</h2>
+                      <a class="catname" href="#!">Experiences</a>
+                      <p>Wayanad is a picturesque district in Kerala bordering Kozhikode district. Wayanad is the only plateau in Kerala and is mostly covered </p>
+                      <a href="#!" class="read-more">Read More <i class="arrow right"></i></a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="largest-section" id="journey-section">
+          <div class="container">
+            <div class="di-flex title-box">
+              <h2 class="sub-title">Follow the Journey</h2>
+              <!-- <div class="nav-button">
+                <button class="prev-nav"><i class="arrow left"></i></button>
+                <button class="next-nav"><i class="arrow right"></i></button>
+              </div> -->
+            </div>
+            <div id="journeyCarousel" class="owl-carousel owl-theme blog-carousel">
+              <div class="item">
+                <a class="banner-item" href="#!">
+                  <div class="image-container">
+                    <!-- <img src="<%= require('./img/Blogs1.jpg') %>" alt="" class="bg-img"> -->
+                    <img src="https://i.ytimg.com/vi/RSF59eZB-e4/hqdefault.jpg" alt="" class="bg-img">
+                    <img class="play-btn watch-video youtube" ytSrc="RSF59eZB-e4" src="<%= require('./img/play-btn.png') %>" alt="">
+                  </div>
+                  <div class="content">
+                    <div class="text-content">
+                      <h2>Know the Important Tourist Places in and Around Wayanad</h2>
+                      <a class="catname" href="#!">Experiences</a> 
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a class="banner-item" href="#!">
+                  <div class="image-container">
+                    <img src="https://i.ytimg.com/vi/37s__XQyHsg/hqdefault.jpg" alt="" class="bg-img">
+                    <img class="play-btn watch-video youtube" ytSrc="37s__XQyHsg" src="<%= require('./img/play-btn.png') %>" alt="">
+                  </div>
+                  <div class="content">
+                    <div class="text-content">
+                      <h2>Know the Important Tourist Places in and Around Wayanad</h2>
+                      <a class="catname" href="#!">Experiences</a> 
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a class="banner-item" href="#!">
+                  <div class="image-container">
+                    <img src="https://i.ytimg.com/vi/_vRL9yyXPs0/hqdefault.jpg" alt="" class="bg-img">
+                    <img class="play-btn watch-video youtube" ytSrc="_vRL9yyXPs0" src="<%= require('./img/play-btn.png') %>" alt="">
+                  </div>
+                  <div class="content">
+                    <div class="text-content">
+                      <h2>Know the Important Tourist Places in and Around Wayanad</h2>
+                      <a class="catname" href="#!">Experiences</a> 
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a class="banner-item" href="#!">
+                  <div class="image-container">
+                    <img src="https://i.ytimg.com/vi/sjWmky2EAkU/hqdefault.jpg" alt="" class="bg-img">
+                    <img class="play-btn watch-video youtube" ytSrc="sjWmky2EAkU" src="<%= require('./img/play-btn.png') %>" alt="">
+                  </div>
+                  <div class="content">
+                    <div class="text-content">
+                      <h2>Know the Important Tourist Places in and Around Wayanad</h2>
+                      <a class="catname" href="#!">Experiences</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a class="banner-item" href="#!">
+                  <div class="image-container">
+                    <img src="https://i.ytimg.com/vi/37s__XQyHsg/hqdefault.jpg" alt="" class="bg-img">
+                    <img class="play-btn watch-video youtube" ytSrc="37s__XQyHsg" src="<%= require('./img/play-btn.png') %>" alt="">
+                  </div>
+                  <div class="content">
+                    <div class="text-content">
+                      <h2>Know the Important Tourist Places in and Around Wayanad</h2>
+                      <a class="catname" href="#!">Experiences</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="visit-place-section">
+          <div class="container">
+            <div class="di-flex visit-flex">
+              <div class="col-33">
+                <div class="check-out">
+                  <h2 class="sub-h-1">Best places to visit in India</h2>
+                  <div class="set-box">
+                    <select name="" id="">
+                      <option value="">By Month</option>
+                      <option value="January">January</option>
+                      <option value="February">February</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                      <option value="May">May</option>
+                      <option value="June">June</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
+                    </select>
+                  </div>
+                    <div class="cas">
+                      <div class="owl-carousel owl-theme placesCards places-cards">
+                        <div class="item" data-dot="<button>1</button>">
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-1.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-2.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-3.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item" data-dot="<button>2</button>">
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-1.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-2.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-3.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>" alt=""></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item" data-dot="<button>3</button>">
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-1.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-2.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-3.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-33">
+                <div class="check-out">
+                    <h2 class="sub-h-1">Best places to visit outside India</h2>
+                    <div class="set-box">
+                        <select name="" id="">
+                            <option value="">By Month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div class="cas">
+                      <div class="owl-carousel owl-theme placesCards places-cards">
+                        <div class="item" data-dot="<button>1</button>">
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-1.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-2.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-3.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item" data-dot="<button>2</button>">
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-1.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">  
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-2.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-3.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item" data-dot="<button>3</button>">
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-1.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-2.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                          <div class="cas-in">
+                            <div class="lft-img">
+                                <img src="<%= require('./img/lft-img-3.png') %>" alt="">
+                            </div>
+                            <div class="lft-txt">
+                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                                </p>
+                                <a class="arrow" href="#"> Read More <img src="<%= require('./img/arrow.png') %>"
+                                        alt=""></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-33">
+                <div class="check-out ">
+                  <h2 class="sub-h-1">Checkout our resorts</h2>
+                  <div class="set-box">
+                      <select name="" id="">
+                          <option value="">Goa</option>
+                          <option value="">Mumbai</option>
+                          <option value="">Delhi</option>
+                          <option value="">Banglor</option>
+                          <option value="">Kalyan</option>
+                          <option value="">Dadar </option>
+                          <option value="">Goa</option>
+                      </select>
+                  </div>
+                  <div class="cas">
+                    <div class="owl-carousel owl-theme placesCards places-cards">
+                      <div class="item" data-dot="<button>1</button>">
+                        <div class="cas-in">
+                          <div class="lft-img">
+                              <img src="<%= require('./img/lft-img-1.png') %>" alt="">
+                          </div>
+                          <div class="lft-txt">
+                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                              </p>
+                              <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
+                                      alt=""></a>
+                          </div>
+                        </div>
+                        <div class="cas-in">
+                          <div class="lft-img">
+                              <img src="<%= require('./img/lft-img-2.png') %>" alt="">
+                          </div>
+                          <div class="lft-txt">
+                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                              </p>
+                              <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
+                                      alt=""></a>
+                          </div>
+                        </div>
+                        <div class="cas-in">
+                          <div class="lft-img">
+                              <img src="<%= require('./img/lft-img-3.png') %>" alt="">
+                          </div>
+                          <div class="lft-txt">
+                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                              </p>
+                              <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
+                                      alt=""></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item" data-dot="<button>2</button>">
+                        <div class="cas-in">
+                          <div class="lft-img">
+                              <img src="<%= require('./img/lft-img-1.png') %>" alt="">
+                          </div>
+                          <div class="lft-txt">
+                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                              </p>
+                              <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
+                                      alt=""></a>
+                          </div>
+                        </div>
+                        <div class="cas-in">
+                          <div class="lft-img">
+                              <img src="<%= require('./img/lft-img-2.png') %>" alt="">
+                          </div>
+                          <div class="lft-txt">
+                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                              </p>
+                              <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
+                                      alt=""></a>
+                          </div>
+                        </div>
+                        <div class="cas-in">
+                          <div class="lft-img">
+                              <img src="<%= require('./img/lft-img-3.png') %>" alt="">
+                          </div>
+                          <div class="lft-txt">
+                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                              </p>
+                              <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
+                                      alt=""></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item" data-dot="<button>3</button>">
+                        <div class="cas-in">
+                          <div class="lft-img">
+                              <img src="<%= require('./img/lft-img-1.png') %>" alt="">
+                          </div>
+                          <div class="lft-txt">
+                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                              </p>
+                              <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
+                                      alt=""></a>
+                          </div>
+                        </div>
+                        <div class="cas-in">
+                          <div class="lft-img">
+                              <img src="<%= require('./img/lft-img-2.png') %>" alt="">
+                          </div>
+                          <div class="lft-txt">
+                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                              </p>
+                              <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
+                                      alt=""></a>
+                          </div>
+                        </div>
+                        <div class="cas-in">
+                          <div class="lft-img">
+                              <img src="<%= require('./img/lft-img-3.png') %>" alt="">
+                          </div>
+                          <div class="lft-txt">
+                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                              </p>
+                              <a class="arrow" href="#"> Book Now <img src="<%= require('./img/arrow.png') %>"
+                                      alt=""></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-club">
+          <div class="container">
+            <div class="content">
+            <h2 class="title">About Club Mahindra</h2>
+            <p class="text">Mahindra Holidays & Resorts India Ltd. (MHRIL), a part of Leisure and Hospitality sector of the Mahindra Group, offers quality family holidays primarily through <span class="text s-dis-none"> vacation ownership memberships and brings to the industry values such as reliability, trust and customer satisfaction. Started in 1996, the company's flagship brand ‘Club Mahindra’, today has over <strong> 250,000 members</strong> , who can holiday at <strong> 100+ resorts </strong> in India and abroad.</span></p>
+            <p class="text s-dis-none">Mahindra Holidays & Resorts India Limited is part of Mahindra Group. The Mahindra Group of companies enable people to rise through innovative mobility solutions, driving rural prosperity, enhancing urban living, nurturing new businesses and fostering communities. It enjoys a leadership position in utility vehicles, information technology, financial services and vacation ownership in India and is the world's largest tractor company by volume. It also enjoys a strong presence in renewable energy, agribusiness, logistics and real estate development. Headquartered in India, Mahindra employs over <br> <strong> 2,56,000 people across 100 countries. </strong></p>
+            <a href="#!" class="read-more readMore">Read More <i class="arrow right"></i></a>
+          </div>
+        </div>
+        </section>
       </main>
     </div>
-
-    <footer></footer>
-
+    <footer>
+      
+    </footer>
+    <!-- <a "></a> -->
+    <!-- <a href="#!" class="sticky-btn-book-apt gotToForm effect-btn mutiStepForm_open sticky-block" data-popup-ordinal="2" id="open_30819152">Get Started</a> -->
+    <a href="#!" class="sticky-btn-book-apt gotToForm effect-btn mutiStepForm_open">JOIN THE CLUB</a>
   </body>
 </html>

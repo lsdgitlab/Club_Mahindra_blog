@@ -14,7 +14,19 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const htmlPageNames = [
   {
       pageName: 'index.html',
-      title: 'Lsdigital gallery'
+      title: 'Club Mahindra'
+  }, 
+  {
+    pageName: 'detail.html',
+    title: 'Club Mahindra'
+  },
+  {
+    pageName: 'category-listing.html',
+    title: 'Club Mahindra'
+  },
+  {
+    pageName: 'individual.html',
+    title: 'Club Mahindra'
   }, 
 ];
 let htmlFileName = htmlPageNames.map(htmlPage=> htmlPage.pageName);
@@ -48,8 +60,10 @@ module.exports = (env, argv) => ({
         patterns: [
           // {from: 'src/*.html', to: '[name].[ext]'},
           // { from: './src/assets/background', to: './assets/background' },
+          { from: "./src/img/component", to: "./img/component" },
           { from: "./src/img/bg", to: "./img/bg" },
           { from: "./src/video", to: "./video" },
+          { from: "./src/assets/vendors/webfonts", to: "./assets/vendors/webfonts" },
           { from: "./src/favicon.ico", to: "./favicon.ico" },
           // { from: 'src/images/*',to: 'images/[name].[ext]'}
          ],
@@ -165,7 +179,7 @@ module.exports = (env, argv) => ({
       jQuery: "jquery",
       'window.jQuery': 'jquery'
     }),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ].concat(multipleHtmlPlugins),
   devServer: {
     contentBase: [

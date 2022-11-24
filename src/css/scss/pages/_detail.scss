@@ -1,0 +1,402 @@
+.detail-page{
+  background-color: #f5f5f5;
+  .largest-section{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 0;
+    padding: 32px;
+    margin: 32px 0;
+    .title-box{
+      border-bottom: 1px solid #0000002f;
+      // padding: 0;
+    }
+    .blog-carousel .item {
+      //  margin: 0; 
+    }
+  }
+  .grid-container{
+    margin-bottom: 0;
+  }
+  .banner-section .di-flex{
+    align-items: stretch;
+  }
+  .banner-carousel, .item, .banner-item, img.bg-img{
+    height: 100%;
+  }
+}
+.grid-container{
+  margin: 40px 0;
+  .flex-containt{
+    // display: grid;
+    // gap: 32px;
+    // // grid-template-columns: repeat(1fr, );
+    // grid-template-columns: 2fr 1fr;
+    align-items: flex-start;
+    justify-content: space-between;
+    .lt-side{
+      width: calc(100% - 380px);
+      max-width: 100%;
+    }
+    .rt-side{
+      width: 360px;
+      max-width: 100%;
+    }
+    .calculator{
+      background-color: #ffffff;
+      border-radius: 8px;
+      margin-bottom: 32px;
+      // margin: 32px 0;
+      .show-data{
+        padding: 32px;
+
+      }
+      .cb-title{
+        margin-bottom: 24px;
+      }
+    }
+    .reach-box{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      border: 1px solid #0000002f;
+      grid-gap: 1px;
+      background-color: #0000002f;
+      align-content: center;
+      .fromTo, .distance, .time{
+        background-color: #ffffff;
+        padding: 16px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #000000;
+        font-weight: bold;
+        // border: 1px solid #0000002f;
+      }
+      .distance{
+        text-align: center;
+      }
+      .fromTo{
+        display: flex;
+        align-items: flex-start;
+        font-size: 14px;
+        font-weight: normal;
+        img{
+          width: 22px;
+          margin: 0;
+          margin-right: 24px;
+        }
+      }
+
+    }
+
+  }
+}
+
+.form-content{
+  margin-bottom: 32px;
+  .from-input-container{
+    margin-bottom: 24px;
+    justify-content: space-between;
+    .col-input{
+      width: 45%;
+      .form-label{
+        font-size: 16px;
+        line-height: 1.5;
+        color: #000000;
+        margin-bottom: 16px;
+        display: inline-block;
+        padding: 0 8px;
+      }
+      .control{
+        display: flex;
+        // align-items: flex-end;
+        .img-sym{
+          width: auto;
+          margin-right: 24px;
+        }
+        
+        .right-select{
+        }
+        .form-control{
+          width: 90%;
+
+          font-size: 14px;
+          line-height: 1.5;
+          color: #848484;
+          font-weight: 300;
+          font-style: italic;
+          border-radius: 5px;
+          background-color: #ffffff;
+          border: 1px dashed #8b8b8b;
+          padding: 8px 16px;
+           /* for Firefox */
+           appearance: none;
+          -moz-appearance: none;
+          /* for Chrome */
+          -webkit-appearance: none;
+  
+        }
+      }
+    }
+  }
+ 
+  .get-distance{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #f7992c;
+    border: none;
+    outline: none;
+    padding: 8px 40px;
+  }
+}
+.popular-routes{
+  background-color: #ffffff;
+  padding: 32px;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  .cb-title{
+    margin-bottom: 32px;
+  }
+  .rourtes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid #0000002f;
+    border-bottom: 1px solid #0000002f;
+    grid-gap: 1px;
+    background-color: #0000002f;
+    align-content: center;
+    margin-bottom: 32px;
+    .fromTo, .distance, .time{
+      background-color: #ffffff;
+      padding: 16px;
+      font-size: 12px;
+      line-height: 1.5;
+      color: #000000;
+      // font-weight: bold;
+      // border: 1px solid #0000002f;
+    }
+    .distance{
+      text-align: center;
+    }
+    .fromTo{
+      display: flex;
+      align-items: flex-start;
+      // font-size: 14px;
+      // font-weight: normal;
+      img{
+        width: 22px;
+        margin: 0;
+        margin-right: 24px;
+      }
+    }
+  }
+  .see-more{
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: underline;
+    color: #f7992c;
+    display: block;
+    text-align: center;
+  }
+
+}
+.route-info{
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  .content{
+    margin-bottom: 32px;
+    .title{
+      font-size: 16px;
+      line-height: 1.5;
+      color: #000000;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 24px;
+      color: #545454;
+    }
+  }
+
+}
+.check-out-details{
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 28px;
+  box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 5%);
+  .cb-title{
+    margin-bottom: 16px;
+  }
+  .cas-in {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .lft-img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+  }
+  .lft-txt {
+    margin-left: 16px;
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+      margin-bottom: 0;
+      color: #000000;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .arrow {
+      color: #f7992c;
+      font-size: 14px;
+      img {
+        margin: 0;
+        display: inline-block;
+        margin-left: 8px;
+        width: auto;
+      }
+    }
+  }
+  .owl-dots .owl-dot button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+  }
+  .owl-dots .owl-dot.active button {
+    color: #ffffff;
+    background-color: #f7992c;
+    
+  }
+  
+}
+.check-out-details .cas-in:last-child{
+  margin-bottom: 16px;
+}
+
+@media (max-width: 991.98px) {
+  .detail-page .grid-container {
+    margin: 16px 0;
+  }
+  .grid-container .flex-containt .calculator .show-data{
+    padding: 24px 18px;
+  }
+  .grid-container .flex-containt .calculator .cb-title{
+    font-size: 18px;
+  }
+  .detail-page .banner-section article .banner-item {
+    height: auto;
+  }
+  .detail-page .form-content .from-input-container .col-input{
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .detail-page .grid-container .flex-containt .calculator .cb-title{
+    margin-bottom: 12px;
+  }
+  .detail-page .form-content .from-input-container .col-input .form-label{
+    padding: 0;
+  }
+  .detail-page .form-content .get-distance{
+    width: 100%;
+  }
+  .detail-page .form-content .from-input-container{
+    margin-bottom: 16px;
+  }
+  .form-content .from-input-container .col-input .control .img-sym {
+    margin-right: 12px;
+  }
+  .grid-container .flex-containt .reach-box {
+    grid-template-columns: 1fr 1fr;
+    border: none; 
+    grid-gap: 1px;
+    background-color: transparent;
+    align-content: center;
+  }
+  .grid-container .flex-containt .reach-box .fromTo{
+    grid-column: 1 / 3;
+    border-bottom: 1px solid #d7d7d7;
+  }
+  .grid-container .flex-containt .reach-box .distance{
+    grid-column: 1 / 2;
+    border-bottom: 1px solid #d7d7d7;
+
+  }
+  .grid-container .flex-containt .reach-box .time{
+    grid-column: 2 / 3;
+    border-bottom: 1px solid #d7d7d7;
+
+  }
+  .grid-container .flex-containt .reach-box .fromTo, .grid-container .flex-containt .reach-box .distance, .grid-container .flex-containt .reach-box .time{
+    padding: 12px;
+    text-align: left;
+  }
+  .grid-container .flex-containt .calculator{
+    margin-bottom: 16px;
+  }
+  .route-info {
+    padding: 24px 16px;
+  }
+  .detail-page .largest-section{
+    margin: 16px 0;
+  }
+  .detail-page .largest-section .title-box{
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+  }
+  .detail-page .blog-carousel{
+    box-shadow: none;
+  }
+  .detail-page .largest-section .blog-carousel .item .content{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 16px;
+    padding-bottom: 0;
+  }
+  .detail-page .largest-section .blog-carousel .item .content h2{
+    font-size: 14px;
+  }
+  .detail-page .grid-container h2{
+    font-size: 16px;
+  }
+  .detail-page .popular-routes{
+    padding: 24px;
+  }
+  .detail-page .popular-routes .cb-title{
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .detail-page .popular-routes .rourtes .fromTo, .popular-routes .rourtes .distance, .popular-routes .rourtes .time {
+    padding: 8px;
+  }
+  .detail-page .popular-routes .rourtes{
+    margin-bottom: 16px;
+  }
+  .detail-page .check-out-details .cb-title{
+    font-size: 18px;
+  }
+  .detail-page .check-out-details .cas-in {
+    flex-wrap: wrap;
+  }
+  .detail-page .check-out-details .lft-img{
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  .detail-page .check-out-details .lft-txt p{
+    font-weight: normal;
+  }
+}

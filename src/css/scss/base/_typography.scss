@@ -4,6 +4,7 @@
 body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
+  font-family: "SF Pro Display";
 }
 a{
   text-decoration: none;
@@ -23,4 +24,11 @@ p,h1,h2,h3,h4,h5,h6{
 }
 .text-right{
   text-align: right;
+}
+
+.cb-title{
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  font-weight: bold;
 }
