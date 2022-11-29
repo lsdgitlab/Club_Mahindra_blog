@@ -10,7 +10,7 @@ const observer = lozad();
 
 observer.observe();
 
-import { submitData} from "./main";
+import { submitData, gotoId} from "./main";
 // console.log("AllowOnlyNumbers")
 // console.log($('.form-control[type=tel]').get(0))
 // console.log($('.allNumber[type=tel]'))
@@ -386,7 +386,13 @@ $(".form-control").on("keyup change", function (event) {
   }
 });
 
-
+$('.form-content select').on('change', function() {
+  if ($(this).val()) {
+    return $(this).css('color', '#000000');
+  } else {
+  return $(this).css('color', '#888888');
+  }
+});
 // $('#scrollToTop').on('click', function () {
 //   $('body,html').animate({
 //       scrollTop: 0,
@@ -497,3 +503,15 @@ $('#tabs-nav li').on('click', function(){
   $(activeTab).fadeIn();
   return false;
 });
+// let gotoId = (id) =>{
+//   // console.log($("#"+id).length)
+//   let heightOfNav = 0;
+//   if($('.acc-header').length){
+//     heightOfNav = $('.acc-header').outerHeight(true);
+//   }
+//   // console.log(heightOfNav)
+//   if($("#"+id).length === 1)
+//     $([document.documentElement, document.body]).animate({
+//         scrollTop: $("#"+id).offset().top - heightOfNav,
+//     }, 1000);
+// };
