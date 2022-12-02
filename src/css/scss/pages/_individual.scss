@@ -300,12 +300,14 @@
     }
 }
 .abt-club {
+    
     .sm-box {
         padding: 25px 20px 30px;
         border-radius: 5px;
         background-color: rgb(255, 255, 255);
         box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
         margin-bottom: 25px;
+        border: 2px solid #ccc;
         // .read-more{
         //     display: none;
         // }
@@ -340,6 +342,7 @@
     -webkit-box-shadow: 0px 0px 17.8px 2.2px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 0px 17.8px 2.2px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
+    border: 2px solid #ccc;
 
     .cb-title {
         margin-bottom: 25px;
