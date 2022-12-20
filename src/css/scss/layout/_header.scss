@@ -194,7 +194,7 @@
         width: 100%;
         box-shadow: 0 0 25px rgb(0 0 0 / 10%);
         left: 0;
-        top: 98%;
+        top: 94%;
         z-index: 2;
         padding: 16px 24px;
         list-style: none;
@@ -369,6 +369,7 @@
       // }
     }
     .login-btn{
+      cursor: pointer;
       background-color: #510B46;
       width: 160px;
       // height: 40px;
