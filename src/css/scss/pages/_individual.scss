@@ -9,7 +9,7 @@
     .banner-section article .banner-item .content .post-author{
         align-items: center;
         justify-content: start;
-        margin-bottom: 8px;
+        // margin-bottom: 8px;
         .autor-img{
             width: 24px;
             height: auto;
@@ -26,6 +26,19 @@
         
         }
     }
+
+    .banner-section article .banner-item .content .blog-date span {
+            color: $white;
+            font-family: "SF Pro Display";
+            font-size: 12px;
+            font-weight: normal;
+            margin-right: 18px;
+            @extend .txt-left;
+            display: inline-block;
+            vertical-align: middle;
+        }
+  
+
     .brad-section{
         margin-bottom: 16px;
     }
