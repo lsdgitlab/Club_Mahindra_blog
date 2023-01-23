@@ -61,7 +61,7 @@
       font-size: 12px;
       line-height: 60px;
       color: #000000;
-      font-family: "SF Pro Display";
+      font-family: "Poppins";
       position: absolute;
       left:50%;
       // right: auto;
@@ -80,7 +80,7 @@
         font-size: 12px;
         line-height: 60px;
         color: #000000;
-        font-family: "SF Pro Display";
+        font-family: "Poppins";
         margin: 0 8px;
         font-weight: 500;
       }
@@ -105,8 +105,8 @@
     line-height: 1.5;
     color: #000000;
     font-weight: bold;
-    font-family: "SF Pro Display";
-    margin-bottom: 24px;
+    font-family: "Poppins";
+    margin-bottom: 14px;
   }
   .form {
     padding: 1px 0;
@@ -159,7 +159,7 @@
     width: 100%;
     color: #000000;
     font-size: 12px;
-    font-family: "SF Pro Display";
+    font-family: "Poppins";
     &.error{
       color: #E34949;
       label{
@@ -179,7 +179,7 @@
     font-size: 14px;
     height: 36px;
     color: #010101;
-    font-family: "SF Pro Display";
+    font-family: "Poppins";
     border-radius: 5px;
     background-color: #ebebeb;
     border: 1px solid #acacac;
@@ -262,7 +262,7 @@
     line-height: 1.5;
     color: #ffffff;
     font-weight: 500;
-    font-family: "SF Pro Display";
+    font-family: "Poppins";
     width: 100%;
   }
   .form-content {
@@ -324,14 +324,14 @@
           line-height: 1.5;
           color: #000000;
           font-weight: bold;
-          font-family: "SF Pro Display";
+          font-family: "Poppins";
           margin-bottom: 4px;
         }
         p{
           font-size: 12px;
           line-height: 1.5;
           color: #000000;
-          font-family: "SF Pro Display";
+          font-family: "Poppins";
         }
       }
       .link{
@@ -339,7 +339,7 @@
           font-size: 12px;
           line-height: 1.5;
           color: #f7992c;
-          font-family: "SF Pro Display";
+          font-family: "Poppins";
           .arrow {
             border: solid #f7992c;
             border-width: 0 2px 2px 0;
@@ -407,7 +407,7 @@
           letter-spacing: 0px;
           line-height: 1.5;
           color: #ffffff;
-          font-family: "SF Pro Display";
+          font-family: "Poppins";
           text-align: center;
           display: inline-block;
           background-color: #f7992c;
@@ -419,7 +419,7 @@
           font-size: 14px;
           line-height: 24px;
           color: #5b5b5b;
-          font-family: "SF Pro Display";
+          font-family: "Poppins";
           margin-bottom: 16px;
         }
       }
@@ -428,7 +428,7 @@
         letter-spacing: 0px;
         line-height: 70px;
         color: #000000;
-        font-family: "SF Pro Display";
+        font-family: "Poppins";
       }
       .image-container{
         position: relative;
@@ -624,7 +624,7 @@
     line-height: 1.5;
     color: #000000;
     font-weight: bold;
-    font-family: "SF Pro Display";
+    font-family: "Poppins";
   }
 
 }

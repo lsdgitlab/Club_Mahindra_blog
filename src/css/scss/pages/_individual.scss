@@ -29,7 +29,7 @@
 
     .banner-section article .banner-item .content .blog-date span {
             color: $white;
-            font-family: "SF Pro Display";
+            font-family: "Poppins";
             font-size: 12px;
             font-weight: normal;
             margin-right: 18px;
@@ -94,7 +94,7 @@
     margin: 48px 0 30px;
 
     h2 {
-        font-family: "SF Pro Display";
+        font-family: "Poppins";
         font-size: 20px;
         line-height: 1.5;
         font-weight: bold;
@@ -103,7 +103,7 @@
 
     p {
         color: $lightgray;
-        font-family: "SF Pro Display";
+        font-family: "Poppins";
         font-size: 14px;
         line-height: 20px;
         @extend .txt-left;
@@ -161,7 +161,7 @@
 
                 span {
                     color: $black;
-                    font-family: "SF Pro Display";
+                    font-family: "Poppins";
                     font-size: 12px;
                     font-weight: normal;
                     margin-right: 18px;
@@ -325,7 +325,7 @@
         //     display: none;
         // }
         .cb-title {
-            margin-bottom: 20px;
+            margin-bottom: 6px;
         }
 
         .text-p {
@@ -358,7 +358,7 @@
     border: 2px solid #ccc;
 
     .cb-title {
-        margin-bottom: 25px;
+        margin-bottom: 12px;
     }
 
     .sub-h-1 {
