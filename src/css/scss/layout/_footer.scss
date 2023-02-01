@@ -21,7 +21,7 @@
 
   h2 {
     color: $white;
-    font-family: 'SF Pro Display';
+    font-family: 'Poppins';
     font-weight: normal;
     font-style: normal;
     font-size: 18px;
@@ -48,7 +48,7 @@
 
       a {
         color: $white;
-        font-family: 'SF Pro Display';
+        font-family: 'Poppins';
         font-weight: normal;
         font-style: normal;
         font-size: 14px;
@@ -107,7 +107,7 @@
         padding-right: 8px;
         h3 {
           color: $white;
-          font-family: 'SF Pro Display';
+          font-family: 'Poppins';
           font-weight: normal;
           font-style: normal;
           font-size: 16px;
@@ -123,7 +123,7 @@
           li {            
             a {              
               color: $white;
-              font-family: 'SF Pro Display';
+              font-family: 'Poppins';
               font-weight: normal;
               font-style: normal;
               font-size: 16px;
@@ -152,13 +152,13 @@
       font-size: 12px;
       line-height: 1.5;
       color: #ffffff;
-      font-family: "SF Pro Display";
+      font-family: "Poppins";
     }
     a{
       font-size: 12px;
       line-height: 1.5;
       color: #ffffff8d;
-      font-family: "SF Pro Display";
+      font-family: "Poppins";
       margin: 0 4px;
     }
   }
@@ -210,7 +210,7 @@
   }
   .ac .ac-trigger{
     color: #ffffff;
-    font-family: "SF Pro Display";
+    font-family: "Poppins";
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
@@ -220,6 +220,9 @@
   }
   .ac .ac-panel .ac-text{
     padding: 0;
+  }
+  .ac .ac-panel .ac-text ul li:nth-child(4), .ac .ac-panel .ac-text ul li:nth-child(6), .ac .ac-panel .ac-text ul li:nth-child(9), .ac .ac-panel .ac-text ul li:nth-child(11){
+    padding-bottom:20px;
   }
   .ac .ac-trigger::after{
     // display: none;
