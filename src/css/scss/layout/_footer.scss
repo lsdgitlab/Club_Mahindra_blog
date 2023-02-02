@@ -126,7 +126,7 @@
               font-family: 'Poppins';
               font-weight: normal;
               font-style: normal;
-              font-size: 16px;
+              font-size: 14px;
               line-height: 26px;
               text-align: left;
               opacity: 0.6;
@@ -165,6 +165,7 @@
   .social-madia{
     width: 30%;
     text-align: right;
+    padding-right: 30px;
     a{
       margin: 0 8px;
       // width: 24px;
@@ -221,7 +222,7 @@
   .ac .ac-panel .ac-text{
     padding: 0;
   }
-  .ac .ac-panel .ac-text ul li:nth-child(4), .ac .ac-panel .ac-text ul li:nth-child(6), .ac .ac-panel .ac-text ul li:nth-child(9), .ac .ac-panel .ac-text ul li:nth-child(11){
+  .ac .ac-panel .ac-text ul.last-col li:nth-child(1), .ac .ac-panel .ac-text ul.last-col li:nth-child(4), .ac .ac-panel .ac-text ul.last-col li:nth-child(7), .ac .ac-panel .ac-text ul.last-col li:nth-child(10), .ac .ac-panel .ac-text ul.last-col li:nth-child(12){
     padding-bottom:20px;
   }
   .ac .ac-trigger::after{
@@ -291,7 +292,7 @@
   right: 60px;
   border-radius: 30px;
   overflow: hidden;
-  width: 340px;
+  width:60px;
   display: flex;
   justify-content: end;
   z-index: 1;
@@ -432,6 +433,7 @@
 @media (max-width: 991.98px) {
   .footer-wrapper .middle-footer .lft-footmenu, .footer-wrapper .middle-footer .rgt-footmenu.m-footmenu, .footer-wrapper .middle-footer .m-footmenu .m-footlist, .footer-wrapper .tc-box, .footer-wrapper .social-madia{
     width: 100%;
+    padding-right: 0;
   }
   .footer-wrapper .middle-footer .m-footmenu .m-footlist h3 {
     padding: 8px 0;
@@ -445,6 +447,7 @@
   }
   .footer-wrapper .social-madia{
     text-align: left;
+    
   }
   .footer-wrapper .ac .ac-trigger {
     font-size: 14px;
@@ -498,4 +501,7 @@
   .footer-wrapper ul.pop-resort {
     text-align: left;
   }
+  .footer-wrapper .social-madia a {
+    margin: 0 6px;
+}
 }

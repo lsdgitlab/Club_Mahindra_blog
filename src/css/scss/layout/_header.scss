@@ -131,7 +131,7 @@
   .logo-box {
     width: 16%;
     img{
-      width: 124px;
+      // width: 124px;
       margin-left: 0;
     }
   }
@@ -840,4 +840,12 @@
       font-weight: 600;
     }
   }
+}
+@media (max-width: 767px) {
+.acc-header .logo-box {
+  width: 80%;
+}
+.acc-header .logo-box img{
+  width: 100%;
+}
 }
