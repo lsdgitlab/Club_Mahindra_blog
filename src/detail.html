@@ -11,7 +11,7 @@
   </head>
   <body data-barba="wrapper">
 
-    <div class="wrapper detail-page" data-barba="container" data-barba-namespace="home">
+    <div class="wrapper detail-page" id="distance" data-barba="container" data-barba-namespace="home">
       <header class="acc-header inernal-click" id="top-menu">
       </header>
       
@@ -616,21 +616,26 @@
                 <div class="popular-routes">
                   <h3 class="cb-title">Popular Routes to Pune</h3>
                   <div class="di-grid rourtes">
-                    <ul id="popular-route">
+                    <ul id="popular-route-1">
                     <li>
                     <div class="fromTo"><strong>Important Routes</strong> </div>
                     <div class="distance"><strong> Time Taken</strong></div>
                     <div class="time"><strong> Distance</strong></div>
                     </li>
+                    <li>                     
+                      <div class="fromTo">Bangalore to Pune</div>
+                      <div class="distance"> 12 hours 18 mins</div>
+                      <div class="time">841 km</div>
+                    </li>
                     
                 </ul>
                   </div>
-                  <a href="#!" class="see-more" id="loadbtn">See More</a>
+                  <button class="see-more" id="loadbtn-1">See More</button>
                 </div>
                 <div class="popular-routes">
                   <h3 class="cb-title">Popular Routes to Pune</h3>
                   <div class="di-grid rourtes">
-                    <ul>
+                    <ul id="popular-route-2">
                     <li>
                     <div class="fromTo"><strong>Important Routes</strong> </div>
                     <div class="distance"><strong> Time Taken</strong></div>
@@ -647,14 +652,10 @@
                     <div class="distance">2 hours 39 mins</div>
                     <div class="time">148 km</div>
                   </li>
-                    <li>                     
-                    <div class="fromTo">Bangalore to Pune</div>
-                    <div class="distance"> 12 hours 18 mins</div>
-                    <div class="time">841 km</div>
-                  </li>
+                    
                 </ul>
                   </div>
-                  <a href="#!" class="see-more">See More</a>
+                  <button class="see-more" id="loadbtn-2">See More</button>
                 </div>
                 <!-- <div class="check-out-details "> -->
                   <!-- <h3 class="cb-title">Checkout our resorts</h3>
@@ -910,5 +911,104 @@
     
     <footer></footer>
     <a href="#!" class="sticky-btn-book-apt gotToForm effect-btn mutiStepForm_open">JOIN THE CLUB</a>
+  <script>
+    var route = [
+  {
+    improute: 'Chennai to Pune',
+    timetaken: '17 hours 30 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Mumbai to Pune',
+    timetaken: '5 hours 10 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Bangalore to Pune',
+    timetaken: '22 hours 31 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Dellhi to Pune',
+    timetaken: '17 hours 30 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Dellhi to Pune',
+    timetaken: '5 hours 10 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Dellhi to Pune',
+    timetaken: '22 hours 31 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '17 hours 30 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '5 hours 10 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '22 hours 31 min',
+    distance: '1,194 km',
+  },
+]
+  if (document.getElementById('distance')) {
+  var routeIndex = [0, 0]
+  var loadMbtns = document.querySelectorAll('.see-more')
+
+  function loadPopularRoute(event) {
+    var btnId = event.target.id
+    var index = btnId.split('-')[1] - 1
+    const routeContainer = document.getElementById(`popular-route-${index + 1}`)
+    routeContainer.style.overflow = 'hidden'
+    routeContainer.style.height = 0
+    routeContainer.style.transition = 'height 0.5s ease-in-out'
+
+    for (var i = routeIndex[index]; i < routeIndex[index] + 2; i++) {
+      if (i >= route.length) {
+        break
+      }
+      const routeList = `
+    <li>
+    <div class="fromTo">${route[i].improute}</div>
+        <div class="distance">${route[i].timetaken}</div>
+        <div class="time">${route[i].distance}</div>  
+    </li>          
+    `
+      routeContainer.innerHTML += routeList
+
+      setTimeout(() => {
+        routeContainer.style.height = routeContainer.scrollHeight + 'px'
+      }, 0)
+    }
+    routeIndex[index] += 3
+
+    loadMbtns.forEach((btn) => {
+      var btnIndex = btn.id.split('-')[1] - 1
+      if (routeIndex[btnIndex] >= route.length) {
+        btn.classList.add('disabled')
+        btn.disabled = true
+      } else {
+        btn.classList.remove('disabled')
+        btn.disabled = false
+      }
+    })
+  }
+  loadMbtns.forEach((btn) => {
+    btn.addEventListener('click', function (event) {
+      loadPopularRoute(event)
+    })
+  })
+  loadPopularRoute(event)
+}
+  </script>
+  
   </body>
 </html>

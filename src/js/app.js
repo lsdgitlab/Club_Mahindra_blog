@@ -8,11 +8,10 @@ import 'jquery-popup-overlay'
 import BigPicture from 'bigpicture'
 const observer = lozad()
 
+import distance from './distance.js'
 observer.observe()
 
 import { submitData, gotoId } from './main'
-
-import distance from './distance.js'
 
 // console.log("AllowOnlyNumbers")
 // console.log($('.form-control[type=tel]').get(0))

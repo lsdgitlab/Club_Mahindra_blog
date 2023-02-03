@@ -694,7 +694,7 @@
       right: 0;
       top: 0;
     }
-    &:last-child, &:nth-last-child(2){
+    &:last-child{
       &::after {
         display: none;
       }
@@ -931,8 +931,11 @@
   .category-carousel .owl-item.active:nth-child(odd)::after{
     content: "|";
   }
-  // .category-carousel .owl-item.active:first-child::after{
+  // .category-carousel .owl-item:nth-last-child(2):before{
   //   content: "|";
+  //         position: absolute;
+  //         right: 0;
+  //         top: 0;
   // }
   .category-section .cb-title{
     margin-bottom: 0px;

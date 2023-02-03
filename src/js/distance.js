@@ -46,6 +46,7 @@ var route = [
     distance: '1,194 km',
   },
 ]
+// Method -1 for single button
 // route.forEach((routeitem) => {
 //   routeContainer = document.getElementById('popular-route')
 //   var routeList = document.createElement('li')
@@ -59,48 +60,58 @@ var route = [
 
 // console.log(route)
 
-var routeIndex = 0
-var loadMbtn = document.getElementById('loadbtn')
+// var routeIndex = 0
+// var loadMbtns = document.querySelectorAll('.see-more')
 
-function loadPopularRoute() {
-  const routeContainer = document.getElementById('popular-route')
-  //   var routeList = document.createElement('li')
-  routeContainer.style.overflow = 'hidden'
-  routeContainer.style.height = 0
-  routeContainer.style.transition = 'height 0.5s ease-in-out'
+// function loadPopularRoute() {
+//   const routeContainer = document.getElementById('popular-route')
+//   //   var routeList = document.createElement('li')
+//   routeContainer.style.overflow = 'hidden'
+//   routeContainer.style.height = 0
+//   routeContainer.style.transition = 'height 0.5s ease-in-out'
 
-  //   loop through the next 3 items from the array
-  for (var i = routeIndex; i < routeIndex + 2; i++) {
-    if (i >= route.length) {
-      break
-    }
-    // append the HTML for route arry item
-    const routeList = `
-    <li>
-    <div class="fromTo">${route[i].improute}</div>
-        <div class="distance">${route[i].timetaken}</div>
-        <div class="time">${route[i].distance}</div>  
-    </li>          
-    `
+//   //   loop through the next 3 items from the array
+//   for (var i = routeIndex; i < routeIndex + 2; i++) {
+//     if (i >= route.length) {
+//       break
+//     }
+//     // append the HTML for route arry item
+//     const routeList = `
+//     <li>
+//     <div class="fromTo">${route[i].improute}</div>
+//         <div class="distance">${route[i].timetaken}</div>
+//         <div class="time">${route[i].distance}</div>
+//     </li>
+//     `
 
-    routeContainer.innerHTML += routeList
+//     routeContainer.innerHTML += routeList
 
-    setTimeout(() => {
-      routeContainer.style.height = routeContainer.scrollHeight + 'px'
-    }, 50)
+//     setTimeout(() => {
+//       routeContainer.style.height = routeContainer.scrollHeight + 'px'
+//     }, 0)
 
-    // routeContainer.innerHTML += routeList
-  }
-  //   update item to load in route container
-  routeIndex += 3
+//     // routeContainer.innerHTML += routeList
+//   }
+//   //   update item to load in route container
+//   routeIndex += 3
 
-  //   disabled load more button after load last array item
-  if (routeIndex >= route.length) {
-    loadMbtn.classList.add('disabled')
-    loadMbtn.removeEventListener('click', loadPopularRoute)
-  }
-}
-if (document.getElementById('popular-route')) {
-  loadMbtn.addEventListener('click', loadPopularRoute)
-  loadPopularRoute()
-}
+//   //   disabled load more button after load last array item
+//   loadMbtn.forEach((btn) => {
+//     if (routeIndex >= route.length) {
+//       loadMbtn.classList.add('disabled')
+//       // loadMbtn.removeEventListener('click', loadPopularRoute)
+//     } else {
+//       loadMbtn.classList.remove('disabled')
+//       // loadMbtn.addEventListener('click', loadPopularRoute)
+//     }
+//   })
+// }
+// if (document.getElementById('popular-route')) {
+//   loadMbtns.forEach((btn) => {
+//     btn.addEventListener('click', loadPopularRoute)
+//   })
+
+//   loadPopularRoute()
+// }
+
+// Method 2 for multiple buttons
