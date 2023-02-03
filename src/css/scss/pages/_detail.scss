@@ -152,29 +152,50 @@
 }
 .popular-routes{
   background-color: #ffffff;
-  padding: 32px;
+  padding:20px;
   margin-bottom: 32px;
   border-radius: 8px;
   border: 2px solid #ccc;
   .cb-title{
-    margin-bottom: 32px;
+    margin-bottom:14px;
   }
   .rourtes{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr;
      border: 1px solid #0000002f;
-    grid-gap: 1px;
-    background-color: #0000002f;
+    // grid-gap: 1px;
+    // background-color: #0000002f;
     align-content: center;
     margin-bottom: 32px;
+    ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      li{
+        // display: inline-flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        // border-bottom:1px solid rgba(0, 0, 0, 0.1843137255);
+        
+      }
+      li:last-child .fromTo, li:last-child .distance,  li:last-child .time{
+        border-bottom: none;
+      }
+      li div:last-child{border-right: none;}
+      
+      
+    }
     .fromTo, .distance, .time{
       background-color: #ffffff;
-      padding: 16px;
+      padding: 10px;
       font-size: 12px;
       line-height: 1.5;
       color: #000000;
       // font-weight: bold;
-      // border: 1px solid #0000002f;
+      border-bottom: 1px solid #0000002f;
+      border-right: 1px solid #0000002f;
     }
     .distance{
       text-align: center;
@@ -198,7 +219,14 @@
     color: #f7992c;
     display: block;
     text-align: center;
+    background: none;
+    border: 0;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+  
   }
+  .see-more.disabled{color: #a5a5a5;cursor: none;}
 
 }
 .route-info{
@@ -348,7 +376,9 @@
   .grid-container .flex-containt .reach-box .fromTo, .grid-container .flex-containt .reach-box .distance, .grid-container .flex-containt .reach-box .time{
     padding: 12px;
     text-align: left;
+    font-size: 12px;
   }
+  .grid-container .flex-containt .reach-box .fromTo{font-size: 14px;}
   .grid-container .flex-containt .calculator{
     margin-bottom: 16px;
   }
@@ -378,7 +408,7 @@
     font-size: 16px;
   }
   .detail-page .popular-routes{
-    padding: 24px;
+    padding: 20px;
   }
   .detail-page .popular-routes .cb-title{
     font-size: 18px;
