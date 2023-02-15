@@ -162,8 +162,8 @@
   .rourtes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-top: 1px solid #0000002f;
-    border-bottom: 1px solid #0000002f;
+    // border-top: 1px solid #0000002f;
+    border: 1px solid #0000002f;
     grid-gap: 1px;
     background-color: #0000002f;
     align-content: center;

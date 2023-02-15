@@ -1,4 +1,6 @@
 dist/
+resources/
+backup/
 node_modules/
 package-lock.json
 .DS_Store

@@ -2,6 +2,9 @@
     text-align: left;
 }
 .indiv-page{
+    .banner-item{
+        position: relative;
+    }
     .banner-section article .banner-item .content{
         align-items: flex-end;
         padding-bottom: 48px;
@@ -87,6 +90,15 @@
     }
     .banner-section article .banner-item h1 a, .banner-section article .banner-item h1{
         font-size: 20px;
+    }
+    .banner-item::after{
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
     }
 }
 
