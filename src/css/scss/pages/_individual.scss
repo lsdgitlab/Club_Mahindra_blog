@@ -2,9 +2,6 @@
     text-align: left;
 }
 .indiv-page{
-    .banner-item{
-        position: relative;
-    }
     .banner-section article .banner-item .content{
         align-items: flex-end;
         padding-bottom: 48px;
@@ -32,7 +29,7 @@
 
     .banner-section article .banner-item .content .blog-date span {
             color: $white;
-            font-family: "SF Pro Display";
+            font-family: "Poppins";
             font-size: 12px;
             font-weight: normal;
             margin-right: 18px;
@@ -91,23 +88,14 @@
     .banner-section article .banner-item h1 a, .banner-section article .banner-item h1{
         font-size: 20px;
     }
-    .banner-item::after{
-        width: 100%;
-        background: rgba(0,0,0,0.5);
-        content: "";
-        position: absolute;
-        height: 100%;
-        left: 0;
-        top: 0;
-    }
 }
 
 .grid-container {
     margin: 48px 0 30px;
 
     h2 {
-        font-family: "SF Pro Display";
-        font-size: 20px;
+        font-family: "Poppins";
+        font-size:16px;
         line-height: 1.5;
         font-weight: bold;
         @extend .txt-left;
@@ -115,7 +103,7 @@
 
     p {
         color: $lightgray;
-        font-family: "SF Pro Display";
+        font-family: "Poppins";
         font-size: 14px;
         line-height: 20px;
         @extend .txt-left;
@@ -173,7 +161,7 @@
 
                 span {
                     color: $black;
-                    font-family: "SF Pro Display";
+                    font-family: "Poppins";
                     font-size: 12px;
                     font-weight: normal;
                     margin-right: 18px;
@@ -337,7 +325,7 @@
         //     display: none;
         // }
         .cb-title {
-            margin-bottom: 20px;
+            margin-bottom: 6px;
         }
 
         .text-p {
@@ -370,7 +358,7 @@
     border: 2px solid #ccc;
 
     .cb-title {
-        margin-bottom: 25px;
+        margin-bottom: 12px;
     }
 
     .sub-h-1 {

@@ -131,7 +131,7 @@
   .logo-box {
     width: 16%;
     img{
-      width: 124px;
+      // width: 124px;
       margin-left: 0;
     }
   }
@@ -160,14 +160,14 @@
       color: #4a1a50;
       padding: 24px 16px 24px 16px;
       display: block;
-      font-family: "SF Pro Display";
+      font-family: "Poppins";
       font-style: normal;
       cursor: pointer;
       font-size: 16px;
       letter-spacing: 2px;
       line-height: 1.5;
       color: #000000;
-      font-family: "SF Pro Display";
+      font-family: "Poppins";
       border-bottom: 3px solid #ffffff;
       // &::before {
       //   content: " ";
@@ -262,7 +262,7 @@
         }
         li {
           a {
-            font-family: "SF Pro Display";
+            font-family: "Poppins";
             font-size: 14px;
             line-height: normal;
             text-align: left;
@@ -299,7 +299,7 @@
         // }
         .link {
           // font-weight: 600;
-          font-family: "SF Pro Display";
+          font-family: "Poppins";
           color: #149fcb;
           border-bottom: 3px solid #149fcb;
           // &::before {
@@ -326,7 +326,7 @@
         }
       }
       .active-header{
-        font-family: "SF Pro Display";
+        font-family: "Poppins";
           // &::before {
           //   visibility: visible;
           // }
@@ -392,7 +392,7 @@
       line-height: 1.5;
       color: #ffffff;
       font-weight: 500;
-      font-family: "SF Pro Display";
+      font-family: "Poppins";
       border-radius: 5px;
       background-color: #f7992c;
       border: none;
@@ -455,7 +455,7 @@
       line-height: 28px;
       color: #4a1a50;
       font-weight: normal;
-      font-family: "SF Pro Display";
+      font-family: "Poppins";
       display: block;
       padding: 4px 0;
       &::first-letter{
@@ -488,7 +488,7 @@
     font-size: 18px;
     line-height: 28px;
     color: #4a1a50;
-    font-family: "SF Pro Display";
+    font-family: "Poppins";
     padding: 32px;
     border: none;
   }
@@ -605,7 +605,7 @@
           font-size: 14px;
           line-height: 40px;
           color: #000;
-          font-family: "Helvetica";
+          font-family: "p";
           display: block;
           cursor: pointer;
           padding: 0;
@@ -734,7 +734,7 @@
         letter-spacing: 2px;
         line-height: 1.5;
         color: #000000;
-        font-family: "SF Pro Display";
+        font-family: "Poppins";
         font-weight: normal;
         border-bottom: 1px solid #ccc;
         padding: 8px;
@@ -763,7 +763,7 @@
       line-height: 1.5;
       color: #ffffff;
       font-weight: 500;
-      font-family: "SF Pro Display";
+      font-family: "Poppins";
       border-radius: 5px;
       background-color: #f7992c;
       // &::after{
@@ -817,7 +817,7 @@
       letter-spacing: 2px;
       line-height: 1.5;
       color: #000000;
-      font-family: "SF Pro Display";
+      font-family: "Poppins";
       margin: 0;
     }
     .ac{
@@ -840,4 +840,12 @@
       font-weight: 600;
     }
   }
+}
+@media (max-width: 767px) {
+.acc-header .logo-box {
+  width: 80%;
+}
+.acc-header .logo-box img{
+  width:140px;
+}
 }
