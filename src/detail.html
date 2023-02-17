@@ -20,21 +20,20 @@
           <div class="container">
             <div class="di-flex">
               <article>
-                <div class="banner-carousel">
+                <div id="bannerCarousel" class="owl-carousel owl-theme banner-carousel distance">
                   <div class="item">
                     <div class="banner-item">
-                      <img src="<%= require('./img/bg/banner-1.jpg') %>" alt="" class="bg-img">
-                      <div class="content">
-                        <div class="text-content">
-                          <h1><a href="#!">It’s Time for Music Lovers to Unite <br>
-                            Welcome to Arunachal Pradesh’s <br>
-                            Ziro Music Festival</a></h1>
-                        </div>
-                      </div>
+                      <a href="#"><img data-src="<%= require('./img/bg/banner-2.jpg') %>" alt="" class="bg-img lozad"></a>                     
                     </div>
                   </div>
-                  
+                  <div class="item">
+                    <div class="banner-item">
+                      <a href="#"><img data-src="<%= require('./img/bg/banner-2.jpg') %>" alt="" class="bg-img lozad"></a>                    
+                    </div>
+                  </div>
                 </div>
+
+
               </article>
               <aside>
                 <div class="form-container">
@@ -368,7 +367,7 @@
               <div class="lt-side">
                 <div class="calculator">
                   <div class="show-data">
-                  <h3 class="cb-title">Distance Calculator and Driving Directions</h3>
+                  <h1 class="cb-title">Distance Calculator and Driving Directions</h1>
                   <!-- <div class="di-flex input-from-to"> -->
                     <form class="form-content" id="fromTo">
                       <div class="di-flex from-input-container">
@@ -405,7 +404,7 @@
                     <button class="get-distance" type="submit">Get Distance and Directions</button>
                     </form>
                     <div class="how-to-reach">
-                      <h3 class="cb-title">How to Reach Mumbai to Pune</h3>
+                      <h2 class="cb-title">How to Reach Mumbai to Pune</h2>
                       <div class="di-grid reach-box">
                         <div class="fromTo"> <img src="./img/car.webp" alt="">Driving Distance:</div>
                         <div class="distance">159.73 km</div>
@@ -447,7 +446,7 @@
               
                 <div class="route-info">
                   <div class="content">
-                    <h4 class="title">Mumbai to Pune Best Route</h4>
+                    <h2 class="title">Mumbai to Pune Best Route</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur delectus provident eaque, aliquid, sed itaque voluptatibus sequi, necessitatibus officiis error ipsum perferendis aperiam eos. Consequatur quasi laboriosam praesentium necessitatibus doloremque?</p>
                   </div>
                   <div class="content">
@@ -633,18 +632,18 @@
               </div>
               <div class="rt-side">
                 <div class="popular-routes">
-                  <h3 class="cb-title">Popular Routes to Pune</h3>
+                  <h2 class="cb-title">Popular Routes to Pune</h2>
                   <div class="di-grid rourtes">
                     <ul id="popular-route-1">
                     <li>
                     <div class="fromTo"><strong>Important Routes</strong> </div>
-                    <div class="distance"><strong> Time Taken</strong></div>
-                    <div class="time"><strong> Distance</strong></div>
+                    <div class="distance"><strong>Distance</strong></div>
+                    <div class="time"><strong> Time Taken </strong></div>
                     </li>
                     <li>                     
                       <div class="fromTo">Bangalore to Pune</div>
-                      <div class="distance"> 12 hours 18 mins</div>
-                      <div class="time">841 km</div>
+                      <div class="distance">841 km </div>
+                      <div class="time">12 hours 18 mins</div>
                     </li>
                     
                 </ul>
@@ -652,24 +651,24 @@
                   <button class="see-more" id="loadbtn-1">See More</button>
                 </div>
                 <div class="popular-routes">
-                  <h3 class="cb-title">Popular Routes to Pune</h3>
+                  <h2 class="cb-title">Popular Routes to Pune</h2>
                   <div class="di-grid rourtes">
                     <ul id="popular-route-2">
                     <li>
                     <div class="fromTo"><strong>Important Routes</strong> </div>
-                    <div class="distance"><strong> Time Taken</strong></div>
-                    <div class="time"><strong> Distance</strong></div>
+                    <div class="distance"><strong>Distance</strong></div>
+                    <div class="time"><strong> Time Taken</strong></div>
                     </li>
                     <li>  
                     <div class="fromTo">Chennai to Pune</div>
-                    <div class="distance">17 hours 32 mins</div>
-                    <div class="time">1,194 km</div>
+                    <div class="distance">1,194 km</div>
+                    <div class="time">17 hours 32 mins</div>
                   </li>
                   </li>
                     <li>
                     <div class="fromTo">Mumbai to Pune</div>
-                    <div class="distance">2 hours 39 mins</div>
-                    <div class="time">148 km</div>
+                    <div class="distance">148 km </div>
+                    <div class="time">2 hours 39 mins</div>
                   </li>
                     
                 </ul>
@@ -997,8 +996,8 @@
       const routeList = `
     <li>
     <div class="fromTo">${route[i].improute}</div>
-        <div class="distance">${route[i].timetaken}</div>
-        <div class="time">${route[i].distance}</div>  
+        <div class="distance">${route[i].distance}</div>
+        <div class="time">${route[i].timetaken}</div>  
     </li>          
     `
       routeContainer.innerHTML += routeList

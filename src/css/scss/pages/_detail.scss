@@ -22,6 +22,7 @@
   }
   .banner-carousel, .item, .banner-item, img.bg-img{
     height: 100%;
+    // border-radius: 5px;
   }
 }
 .grid-container{
@@ -372,6 +373,9 @@
 .box:hover .title,
 .box:hover .post{
     transform: translateY(0);
+}
+.distance img{
+  border-radius: 5px;
 }
 
 @media only screen and (max-width:990px){
