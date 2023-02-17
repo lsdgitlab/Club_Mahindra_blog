@@ -56,7 +56,7 @@ if ($('#bannerCarousel').length) {
     smartSpeed: 2000,
     responsive: {
       0: {
-        nav: false,
+        nav: true,
       },
       992: {
         nav: true,
