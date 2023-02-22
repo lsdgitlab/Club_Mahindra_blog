@@ -307,3 +307,9 @@
     text-transform: uppercase;
 }
 }
+#bannerCarousel.banner-carousel .owl-nav button.owl-next {
+  right: 0;
+} 
+#bannerCarousel.banner-carousel .owl-nav button.owl-prev {
+  left: 0;
+}

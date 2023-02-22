@@ -132,7 +132,7 @@ if ($('#visiteCarousel').length) {
   let visiteCarousel = $('#visiteCarousel').owlCarousel({
     margin: 0,
     dots: false,
-    // nav:true,
+    nav:true,
     // center:true,
     // navText: [$('#blog-section .prev-nav'),$('#blog-section .next-nav')],
     autoplayTimeout: 5000,
@@ -147,13 +147,13 @@ if ($('#visiteCarousel').length) {
       },
     },
   })
-  $('#blog-section .prev-nav').on('click', function () {
-    visiteCarousel.trigger('prev.owl.carousel')
-  })
-  // Go to the previous item
-  $('#blog-section .next-nav').on('click', function () {
-    visiteCarousel.trigger('next.owl.carousel')
-  })
+  // $('#blog-section .prev-nav').on('click', function () {
+  //   visiteCarousel.trigger('prev.owl.carousel')
+  // })
+  // // Go to the previous item
+  // $('#blog-section .next-nav').on('click', function () {
+  //   visiteCarousel.trigger('next.owl.carousel')
+  // })
 }
 if ($('#visiteCarousel1').length) {
   let visiteCarousel = $('#visiteCarousel1').owlCarousel({
