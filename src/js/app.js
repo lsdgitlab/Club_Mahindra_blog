@@ -134,7 +134,7 @@ if ($('#visiteCarousel').length) {
     dots: false,
     nav:true,
     // center:true,
-    // navText: [$('#blog-section .prev-nav'),$('#blog-section .next-nav')],
+    navText: ["<i class='arrow left'></i>", "<i class='arrow right'></i>"],
     autoplayTimeout: 5000,
     // loop:true,
     smartSpeed: 2000,
@@ -160,9 +160,9 @@ if ($('#visiteCarousel1').length) {
     margin: 0,
     items: 2,
     dots: false,
-    // nav:true,
+    nav:true,
     // center:true,
-    // navText: [$('#blog-section .prev-nav'),$('#blog-section .next-nav')],
+    navText: ["<i class='arrow left'></i>", "<i class='arrow right'></i>"],
     autoplayTimeout: 5000,
     // loop:true,
     smartSpeed: 2000,
@@ -175,22 +175,22 @@ if ($('#visiteCarousel1').length) {
       },
     },
   })
-  $('#blog-section1 .prev-nav').on('click', function () {
-    visiteCarousel.trigger('prev.owl.carousel')
-  })
-  // Go to the previous item
-  $('#blog-section1 .next-nav').on('click', function () {
-    visiteCarousel.trigger('next.owl.carousel')
-  })
+  // $('#blog-section1 .prev-nav').on('click', function () {
+  //   visiteCarousel.trigger('prev.owl.carousel')
+  // })
+  // // Go to the previous item
+  // $('#blog-section1 .next-nav').on('click', function () {
+  //   visiteCarousel.trigger('next.owl.carousel')
+  // })
 }
 if ($('#visiteCarousel2').length) {
   let visiteCarousel = $('#visiteCarousel2').owlCarousel({
     margin: 0,
     items: 2,
     dots: false,
-    // nav:true,
+    nav:true,
     // center:true,
-    // navText: [$('#blog-section .prev-nav'),$('#blog-section .next-nav')],
+    navText: ["<i class='arrow left'></i>", "<i class='arrow right'></i>"],
     autoplayTimeout: 5000,
     // loop:true,
     smartSpeed: 2000,
