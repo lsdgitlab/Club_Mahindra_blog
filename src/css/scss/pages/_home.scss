@@ -961,8 +961,19 @@
 // #catNavBar .category-carousel .owl-nav button.owl-prev.disabled .left, #catNavBar .category-carousel .owl-nav button.owl-next.disabled .right{}
 #catNavBar .category-carousel .owl-nav button.owl-prev.disabled .arrow, #catNavBar .category-carousel .owl-nav button.owl-next.disabled .arrow{opacity: 0.3;border-color:#000}
 #catNavBar .category-carousel .owl-nav button.owl-prev .arrow, #catNavBar .category-carousel .owl-nav button.owl-next .arrow{border-color:#f7992c}
+// 23-02-22
+.visit-place-section .lft-img, .visit-place-section .lft-txt{
+  width: 50%;
+ }
+ .visit-place-section .lft-txt{
+  display: inline-flex;
+  align-items: center;
+}
+ .visit-place-section .arrow{display: none;}
 
 }
+
+
 
 // // 1st point add height 
 // .visit-place-section .lft-img img {

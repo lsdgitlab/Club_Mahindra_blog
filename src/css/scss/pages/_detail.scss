@@ -403,7 +403,7 @@
     padding: 24px 18px;
   }
   .grid-container .flex-containt .calculator .cb-title{
-    font-size: 18px;
+    font-size: 16px;
   }
   .detail-page .banner-section article .banner-item {
     height: auto;
@@ -464,8 +464,9 @@
     margin: 16px 0;
   }
   .detail-page .largest-section .title-box{
-    margin-bottom: 24px;
+    margin-bottom: 0;
     padding-bottom: 12px;
+    border-bottom:none;
   }
   .detail-page .blog-carousel{
     box-shadow: none;
@@ -508,4 +509,12 @@
   .detail-page .check-out-details .lft-txt p{
     font-weight: normal;
   }
+  .detail-page .blog-carousel .owl-nav {
+    // margin: 0;
+    // position: absolute;
+    top: -58px;
+    right: -5px;
+  }
+  
+
 }
