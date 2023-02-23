@@ -385,6 +385,10 @@
   font-family: "Poppins";
   margin-bottom: 8px;
 }
+.negative-case{margin: 20px 0;}
+.negative-case .ttl{color: #000;font-size: 16px;font-weight: bold;padding-bottom: 11px;}
+.negative-case .reach-box{margin-top:15px;}
+.negative-case .reach-box .time{text-align: center;}
 @media only screen and (max-width:990px){
     .box{ margin: 0 0 30px; }
 }

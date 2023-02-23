@@ -100,7 +100,7 @@
   border: 2px solid #e1e1e1;
   box-shadow: 0px 150px 75px rgba(0,0,0,0.05);
   padding: 20px;
-  h2{
+  h2, .formttl{
     font-size: 16px;
     line-height: 1.5;
     color: #000000;
@@ -768,7 +768,7 @@
     margin-top: 60px;
     display: none;
   }
-  .form-container h2 {
+  .form-container .formttl {
     font-size: 14px;
   }
   .form-container .form-content {
@@ -954,6 +954,13 @@
     line-height: 30px;
     width: auto;
 }
+.banner-section article .banner-item h1{text-align: center;}
+// #bannerCarousel.banner-carousel .owl-nav button.owl-prev {left: 0;}
+// #bannerCarousel.banner-carousel .owl-nav button.owl-next {right: 0;}
+// #catNavBar .category-carousel .owl-nav button.owl-next, #catNavBar .category-carousel .owl-nav button.owl-prev{border-color:#f7992c}
+// #catNavBar .category-carousel .owl-nav button.owl-prev.disabled .left, #catNavBar .category-carousel .owl-nav button.owl-next.disabled .right{}
+#catNavBar .category-carousel .owl-nav button.owl-prev.disabled .arrow, #catNavBar .category-carousel .owl-nav button.owl-next.disabled .arrow{opacity: 0.3;border-color:#000}
+#catNavBar .category-carousel .owl-nav button.owl-prev .arrow, #catNavBar .category-carousel .owl-nav button.owl-next .arrow{border-color:#f7992c}
 
 }
 

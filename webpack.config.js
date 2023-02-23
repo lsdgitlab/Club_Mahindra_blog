@@ -18,7 +18,7 @@ const htmlPageNames = [
   }, 
   {
     pageName: 'detail.html',
-    title: 'Club Mahindra'
+    title: 'Distance Calculator Find Distance Between Cities'
   },
   {
     pageName: 'category-listing.html',
