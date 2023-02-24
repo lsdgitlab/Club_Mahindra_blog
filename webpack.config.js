@@ -27,6 +27,9 @@ const htmlPageNames = [
   {
     pageName: 'individual.html',
     title: 'Club Mahindra'
+  },{
+    pageName: 'default.html',
+    title: 'Default'
   }, 
 ];
 let htmlFileName = htmlPageNames.map(htmlPage=> htmlPage.pageName);
