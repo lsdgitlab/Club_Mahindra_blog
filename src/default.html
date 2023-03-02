@@ -377,7 +377,7 @@
                         <div class="control">
                           <img class="img-sym" src="<%= require('./img/location.svg') %>" alt="">
                             <select name class="form-control" required id="fromLoca">
-                              <option value class="placeholder">Mumbai</option>
+                              <option value class="placeholder">Location</option>
                               <option value="1">Mumbai</option>
                               <option value="2">Delhi</option>
                               <option value="2">Banglore</option>
@@ -448,27 +448,20 @@
             </div>
               <!-- map start end -->
               
-                <div class="route-info" style="display: none;">
+                <div class="route-info" style="display: block;">
                   <div class="content">
-                    <h2 class="title">Mumbai to Pune Best Route</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur delectus provident eaque, aliquid, sed itaque voluptatibus sequi, necessitatibus officiis error ipsum perferendis aperiam eos. Consequatur quasi laboriosam praesentium necessitatibus doloremque?</p>
+                    <h2 class="title">What is Lorem Ipsum?</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
                   </div>
                   <div class="content">
-                    <h2 class="title">Other means of Traveling from Mumbai to Pune</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur delectus provident eaque, aliquid, sed itaque voluptatibus sequi, necessitatibus officiis error ipsum perferendis aperiam eos. Consequatur quasi laboriosam praesentium necessitatibus doloremque?</p>
+                    <h2 class="title">What is Lorem Ipsum?</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
                   </div>
-                  <div class="content">
-                    <h2 class="title">How to Reach Pune by Train</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur delectus provident eaque, aliquid, sed itaque voluptatibus sequi, necessitatibus officiis error ipsum perferendis aperiam eos. Consequatur quasi laboriosam praesentium necessitatibus doloremque?</p>
-                  </div>
-                  <div class="content">
-                    <h2 class="title">Best time to Visit Pune</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur delectus provident eaque, aliquid, sed itaque voluptatibus sequi, necessitatibus officiis error ipsum perferendis aperiam eos. Consequatur quasi laboriosam praesentium necessitatibus doloremque?</p>
-                  </div>
+                  
                 </div>
                 <div class="largest-section" id="blog-section">
                   <div class="di-flex title-box">
-                    <h2 class="sub-title">Places To Visit In Pune </h2>
+                    <h2 class="sub-title">Places To Visit <span style="display: none;"> In Pune </span></h2>
                     <!-- <div class="nav-button">
                       <button class="prev-nav"><i class="arrow left"></i></button>
                       <button class="next-nav"><i class="arrow right"></i></button>
@@ -523,7 +516,7 @@
                 </div>
                 <div class="largest-section" id="blog-section1">
                   <div class="di-flex title-box">
-                    <h2 class="sub-title">Popular food in Pune</h2>
+                    <h2 class="sub-title">Popular food <span style="display: none;">in Pune</span> </h2>
                     <!-- <div class="nav-button">
                       <button class="prev-nav"><i class="arrow left"></i></button>
                       <button class="next-nav"><i class="arrow right"></i></button>
@@ -579,7 +572,7 @@
                 </div>
                 <div class="largest-section" id="blog-section2">
                   <div class="di-flex title-box">
-                    <h2 class="sub-title">Things to Do in Pune </h2>
+                    <h2 class="sub-title">Things to Do <span style="display: none;"> in Pune</span> </h2>
                     <!-- <div class="nav-button">
                       <button class="prev-nav"><i class="arrow left"></i></button>
                       <button class="next-nav"><i class="arrow right"></i></button>
@@ -632,10 +625,12 @@
                     </div>
                   </div>
                 </div>
+
+               
               </div>
               <div class="rt-side">
                 <div class="popular-routes" style="display: none;">
-                  <h2 class="cb-title">Popular Routes to Pune</h2>
+                  <h2 class="cb-title">Popular Routes <span style="display:none"> to Pune</span></h2>
                   <div class="di-grid rourtes">
                     <ul id="popular-route-1">
                     <li>
@@ -653,8 +648,8 @@
                   </div>
                   <button class="see-more" id="loadbtn-1">See More</button>
                 </div>
-                <div class="popular-routes" style="display: none;">
-                  <h2 class="cb-title">Popular Routes to Pune</h2>
+                <div class="popular-routes" style="display: block;">
+                  <h2 class="cb-title">Popular Routes <span style="display:none"> to Pune</span></h2>
                   <div class="di-grid rourtes">
                     <ul id="popular-route-2">
                     <li>
@@ -673,6 +668,13 @@
                     <div class="distance">148 km </div>
                     <div class="time">2 hours 39 mins</div>
                   </li>
+                  <li>  
+                    <div class="fromTo">Chennai to Pune</div>
+                    <div class="distance">1,194 km</div>
+                    <div class="time">17 hours 32 mins</div>
+                  </li>
+                  </li>
+                   
                     
                 </ul>
                   </div>
@@ -783,9 +785,54 @@
     timetaken: '22 hours 31 min',
     distance: '1,194 km',
   },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '17 hours 30 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '5 hours 10 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '22 hours 31 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '17 hours 30 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '5 hours 10 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '22 hours 31 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '17 hours 30 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '5 hours 10 min',
+    distance: '1,194 km',
+  },
+  {
+    improute: 'Manali to Pune',
+    timetaken: '22 hours 31 min',
+    distance: '1,194 km',
+  },
 ]
   if (document.getElementById('distance')) {
-  var routeIndex = [0, 0]
+  var routeIndex = [5, 8]
   var loadMbtns = document.querySelectorAll('.see-more')
 
   function loadPopularRoute(event) {
@@ -796,7 +843,7 @@
     routeContainer.style.height = 0
     routeContainer.style.transition = 'height 0.5s ease-in-out'
 
-    for (var i = routeIndex[index]; i < routeIndex[index] + 2; i++) {
+    for (var i = routeIndex[index]; i < routeIndex[index] + 3; i++) {
       if (i >= route.length) {
         break
       }
@@ -813,7 +860,7 @@
         routeContainer.style.height = routeContainer.scrollHeight + 'px'
       }, 0)
     }
-    routeIndex[index] += 3
+    routeIndex[index] += 5
 
     loadMbtns.forEach((btn) => {
       var btnIndex = btn.id.split('-')[1] - 1
