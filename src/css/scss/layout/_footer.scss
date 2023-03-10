@@ -423,8 +423,8 @@
     width: 44px;
     height: 44px;
     border-radius: 22px;
-    background-color: #333;
-    border: 2px solid #000000;
+    background-color: #fff;
+    border: 0;
     font-size: 24px;
     line-height: 32px;
     color: #000000;
@@ -458,7 +458,9 @@
   .footer-wrapper .middle-footer .lft-footmenu, .footer-wrapper .middle-footer .rgt-footmenu.m-footmenu, .footer-wrapper .middle-footer .m-footmenu .m-footlist, .footer-wrapper .tc-box, .footer-wrapper .social-madia{
     width: 100%;
     padding-right: 0;
+    .m-footlist {margin-right: 0;}
   }
+  
   .footer-wrapper .middle-footer .rgt-footmenu.m-footmenu .m-footlist{padding:1%;border: 1px solid #d1d1d1;}
   .footer-wrapper .middle-footer .m-footmenu .m-footlist h3 {
     padding: 8px 0;
@@ -467,9 +469,7 @@
   .middle-footer .m-footmenu .m-footlist {
     border-bottom: 1px solid #d1d1d1;
   }
-  .footer-wrapper .ac .ac-trigger::after {
-    visibility: visible;
-  }
+  
   .footer-wrapper .social-madia{
     text-align: left;
     
@@ -495,7 +495,9 @@
   // 23-02
   .footer-wrapper ul.pop-resort {
     margin-bottom: 20px;
-    padding-bottom: 20px;}
+    padding-bottom: 20px;
+  display: flex;
+flex-wrap: wrap;}
   .footer-wrapper ul.pop-resort li a {
     font-size: 12px;
     line-height: 1.5;
@@ -531,5 +533,10 @@
   }
   .footer-wrapper .social-madia a {
     margin: 0 6px;
+}
+}
+@media (max-width:699px) {
+.footer-wrapper .ac .ac-trigger::after {
+  visibility: visible;
 }
 }
