@@ -302,6 +302,18 @@ ul#tabs-nav li.active {
   left: 0;
   z-index: 1;
 }
+.pos-sticky1{
+  position: sticky;
+  top: -290px;
+  left: 0;
+  z-index: 1;
+}
+.pos-sticky2{
+  position: sticky;
+  top: -690px;
+  left: 0;
+  z-index: 1;
+}
 .pos-relative{
   position: relative;
   left: 0;
@@ -335,8 +347,8 @@ ul#tabs-nav li.active {
   }
 }
 @media (max-width: 992px) {
-  .container{
-    // padding-right: 32px;
-    // padding-left: 32px;
-  }
+  // .container{
+  //   // padding-right: 32px;
+  //   // padding-left: 32px;
+  // }
 }
