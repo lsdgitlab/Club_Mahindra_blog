@@ -628,7 +628,7 @@
 
                
               </div>
-              <div class="rt-side">
+              <div class="rt-side pos-sticky1">
                 <div class="popular-routes" style="display: none;">
                   <h2 class="cb-title">Popular Routes <span style="display:none"> to Pune</span></h2>
                   <div class="di-grid rourtes">
@@ -651,18 +651,21 @@
                 <div class="popular-routes" style="display: block;">
                   <h2 class="cb-title">Popular Routes <span style="display:none"> to Pune</span></h2>
                   <div class="di-grid rourtes">
+                    <ul id="popular-route-22">
+                      <li>
+                     <div class="fromTo"><strong>Important Routes</strong> </div>
+                     <div class="distance"><strong>Distance</strong></div>
+                     <div class="time"><strong> Time Taken</strong></div>
+                     </li></ul>
+
                     <ul id="popular-route-2">
-                    <li>
-                    <div class="fromTo"><strong>Important Routes</strong> </div>
-                    <div class="distance"><strong>Distance</strong></div>
-                    <div class="time"><strong> Time Taken</strong></div>
-                    </li>
-                    <li>  
+                    
+                   <li>  
                     <div class="fromTo">Chennai to Pune</div>
                     <div class="distance">1,194 km</div>
                     <div class="time">17 hours 32 mins</div>
                   </li>
-                  </li>
+                
                     <li>
                     <div class="fromTo">Mumbai to Pune</div>
                     <div class="distance">148 km </div>
@@ -673,36 +676,162 @@
                     <div class="distance">1,194 km</div>
                     <div class="time">17 hours 32 mins</div>
                   </li>
+                  <li>  
+                    <div class="fromTo">Chennai to Pune</div>
+                    <div class="distance">1,194 km</div>
+                    <div class="time">17 hours 32 mins</div>
                   </li>
-                   
-                    
+                
+                    <li>
+                    <div class="fromTo">Mumbai to Pune</div>
+                    <div class="distance">148 km </div>
+                    <div class="time">2 hours 39 mins</div>
+                  </li>
+                  <li>  
+                    <div class="fromTo">Chennai to Pune</div>
+                    <div class="distance">1,194 km</div>
+                    <div class="time">17 hours 32 mins</div>
+                  </li>
+                  <li>  
+                    <div class="fromTo">Chennai to Pune</div>
+                    <div class="distance">1,194 km</div>
+                    <div class="time">17 hours 32 mins</div>
+                  </li>
+                
+                    <li>
+                    <div class="fromTo">Mumbai to Pune</div>
+                    <div class="distance">148 km </div>
+                    <div class="time">2 hours 39 mins</div>
+                  </li>
+                  <li>  
+                    <div class="fromTo">Chennai to Pune</div>
+                    <div class="distance">1,194 km</div>
+                    <div class="time">17 hours 32 mins</div>
+                  </li>
+                  <li>  
+                    <div class="fromTo">Chennai to Pune</div>
+                    <div class="distance">1,194 km</div>
+                    <div class="time">17 hours 32 mins</div>
+                  </li>
+                
+                    <li>
+                    <div class="fromTo">Mumbai to Pune</div>
+                    <div class="distance">148 km </div>
+                    <div class="time">2 hours 39 mins</div>
+                  </li>
+                  <li>  
+                    <div class="fromTo">Chennai to Pune</div>
+                    <div class="distance">1,194 km</div>
+                    <div class="time">17 hours 32 mins</div>
+                  </li>
+                  <li>  
+                    <div class="fromTo">Chennai to Pune</div>
+                    <div class="distance">1,194 km</div>
+                    <div class="time">17 hours 32 mins</div>
+                  </li>
+                  <li>  
+                    <div class="fromTo">Chennai to Pune</div>
+                    <div class="distance">1,194 km</div>
+                    <div class="time">17 hours 32 mins</div>
+                  </li> <li>  
+                    <div class="fromTo">Chennai to Pune</div>
+                    <div class="distance">1,194 km</div>
+                    <div class="time">17 hours 32 mins</div>
+                  </li>
+                  
                 </ul>
                   </div>
                   <button class="see-more" id="loadbtn-2">See More</button>
+                  <button class="see-more closeBtn" id="closeBtn">Close</button>
                 </div>
                
                 <div class=" check-out-blogs">
 
                   <h2 class="cb-title">Checkout our resorts</h2>
+                 
                   <div class="set-box">
-                      <select name="" id="">
-                          <option value="">Goa</option>
-                          <option value="">Mumbai</option>
-                          <option value="">Delhi</option>
-                          <option value="">Banglor</option>
-                          <option value="">Kalyan</option>
-                          <option value="">Dadar </option>
-                          <option value="">Goa</option>
-                      </select>
+                    <select name="" id="resortDrpdwn">
+                      <option value="Goa">Goa</option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="West-Bengal">West Bengal</option>
+                      <option value="Himachal-Pradesh">Himachal Pradesh</option>
+                      <option value="Sikkim">Sikkim</option>
+                      <option value="Uttrakhand">Uttrakhand </option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Tamil-Nadu">Tamil Nadu</option>
+                      <option value="Gujarat">Gujarat</option>
+                      <option value="Kashmir">Kashmir</option>
+                      <option value="Maharastra">Maharastra</option>
+                      <option value="Rajasthan">Rajasthan</option>
+                      <option value="Madhya-Pradesh">Madhya Pradesh</option>
+                      <option value="Uttrapradesh">Uttrapradesh</option>
+                      <option value="Andaman">Andaman</option>
+                  </select>
                   </div>
 
                   <div class="cas-rb">
+                    <div class="options" data-option="Goa" style="display: block;">
+                    
                     <div class="rb-lg">
                         <div class="rb-stck">
                             <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
                         </div>
                         <div class="rb-lg-txt">
+                            <p>Goa Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
                             <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="options" data-option="Kerala" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Kerala Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="options" data-option="West-Bengal" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>West-Bengal Lorem ipsum dolor sit amet, </p>
                         </div>
                     </div>
                     <div class="rb-lg">
@@ -723,6 +852,341 @@
                     </div>
                   </div>
 
+                  <div class="options" data-option="Himachal-Pradesh" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Himachal-Pradesh Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div class="options" data-option="Sikkim" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Sikkim Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="options" data-option="Uttrakhand" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Uttrakhand Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+                 
+                  <div class="options" data-option="Karnataka" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Karnataka Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="options" data-option="Tamil-Nadu" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Tamil Nadu Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="options" data-option="Gujarat" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Gujarat Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="options" data-option="Kashmir" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Kashmir Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="options" data-option="Maharastra" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Maharastra Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="options" data-option="Rajasthan" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Rajasthan Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="options" data-option="Madhya-Pradesh" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Madhya Pradesh Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="options" data-option="Uttrapradesh" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Uttrapradesh Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="options" data-option="Andaman" style="display: none;">
+                    
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-1.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Andaman Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-2.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                    <div class="rb-lg">
+                        <div class="rb-stck">
+                            <img src="<%= require('./img/lrg-3.png') %>" alt="" class="">
+                        </div>
+                        <div class="rb-lg-txt">
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+                  </div>
+
+
+              
+                  </div>  
+
                 </div>
 
 
@@ -739,148 +1203,259 @@
     <footer></footer>
     <a href="#!" class="sticky-btn-book-apt gotToForm effect-btn mutiStepForm_open">JOIN THE CLUB</a>
   <script>
-    var route = [
-  {
-    improute: 'Chennai to Pune',
-    timetaken: '17 hours 30 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Mumbai to Pune',
-    timetaken: '5 hours 10 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Bangalore to Pune',
-    timetaken: '22 hours 31 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Dellhi to Pune',
-    timetaken: '17 hours 30 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Dellhi to Pune',
-    timetaken: '5 hours 10 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Dellhi to Pune',
-    timetaken: '22 hours 31 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '17 hours 30 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '5 hours 10 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '22 hours 31 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '17 hours 30 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '5 hours 10 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '22 hours 31 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '17 hours 30 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '5 hours 10 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '22 hours 31 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '17 hours 30 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '5 hours 10 min',
-    distance: '1,194 km',
-  },
-  {
-    improute: 'Manali to Pune',
-    timetaken: '22 hours 31 min',
-    distance: '1,194 km',
-  },
-]
-  if (document.getElementById('distance')) {
-  var routeIndex = [5, 8]
-  var loadMbtns = document.querySelectorAll('.see-more')
+//     var route = [
+//   {
+//     improute: 'Chennai to Pune',
+//     timetaken: '17 hours 30 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Mumbai to Pune',
+//     timetaken: '5 hours 10 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Bangalore to Pune',
+//     timetaken: '22 hours 31 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Dellhi to Pune',
+//     timetaken: '17 hours 30 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Dellhi to Pune',
+//     timetaken: '5 hours 10 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Dellhi to Pune',
+//     timetaken: '22 hours 31 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '17 hours 30 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '5 hours 10 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '22 hours 31 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '17 hours 30 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '5 hours 10 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '22 hours 31 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '17 hours 30 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '5 hours 10 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '22 hours 31 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '17 hours 30 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '5 hours 10 min',
+//     distance: '1,194 km',
+//   },
+//   {
+//     improute: 'Manali to Pune',
+//     timetaken: '22 hours 31 min',
+//     distance: '1,194 km',
+//   },
+// ]
+// if (document.getElementById('distance')) {
+//   var routeIndex = 2 
+//   var loadMbtns = document.getElementById('loadbtn-2')
 
-  function loadPopularRoute(event) {
-    var btnId = event.target.id
-    var index = btnId.split('-')[1] - 1
-    const routeContainer = document.getElementById(`popular-route-${index + 1}`)
-    routeContainer.style.overflow = 'hidden'
-    routeContainer.style.height = 0
+//   function loadPopularRoute(event) {
+//     const routeContainer = document.getElementById('popular-route-2')
+//     routeContainer.style.overflow = 'hidden'
+//     routeContainer.style.height = 0
+//     routeContainer.style.transition = 'height 0.5s ease-in-out'
+
+//     for (var i = routeIndex; i < route.length + 3; i++) {
+//       if (i >= route.length) {
+//         break
+//       }
+//       const routeList = `
+//         <li>
+//           <div class="fromTo">${route[i].improute}</div>
+//           <div class="distance">${route[i].distance}</div>
+//           <div class="time">${route[i].timetaken}</div>  
+//         </li>          
+//       `
+//       routeContainer.innerHTML += routeList
+//       setTimeout(() => {
+//         routeContainer.style.height = routeContainer.scrollHeight + 'px'
+//       }, 0)      
+//     }
+//     routeIndex++
+
+//     loadMbtns.addEventListener('click', (btn)=>{
+//       if (routeIndex >= route.length) {
+//         btn.innerHTML = 'close'
+//         btn.classList.add('clsItem');      
+//         // btn.disabled = true
+//       } 
+//       else {
+//         btn.classList.remove('clsItem')
+//         // btn.disabled = false
+//         btn.innerHTML = 'See More'
+//       }
+//     })
+
+//   }
+//   loadMbtns.addEventListener('click', function (event) {
+//     loadPopularRoute(event)
+//   })
+//   loadPopularRoute()
+// }
+
+// Wait for the document to be ready before executing the following code
+document.addEventListener("DOMContentLoaded", function() {
+
+  var routeContainer = document.getElementById('popular-route-2')
+    routeContainer.style.overflow = 'hidden'   
     routeContainer.style.transition = 'height 0.5s ease-in-out'
 
-    for (var i = routeIndex[index]; i < routeIndex[index] + 3; i++) {
-      if (i >= route.length) {
-        break
-      }
-      const routeList = `
-    <li>
-    <div class="fromTo">${route[i].improute}</div>
-        <div class="distance">${route[i].distance}</div>
-        <div class="time">${route[i].timetaken}</div>  
-    </li>          
-    `
-      routeContainer.innerHTML += routeList
+// Show the first three elements
+document.querySelectorAll('#popular-route-2 li:nth-of-type(-n+3)').forEach(function(element) {
+  routeContainer.style.height = 170 + 'px'
+  element.classList.add('show');
 
-      setTimeout(() => {
-        routeContainer.style.height = routeContainer.scrollHeight + 'px'
-      }, 0)
+  
+});
+
+// Load more elements when the "Load More" button is clicked
+document.querySelector('#loadbtn-2').addEventListener('click', function() {
+
+  // Get the current number of visible elements
+  var visibleElements = document.querySelectorAll('#popular-route-2 li.show').length;
+
+  // Show the next three elements
+  console.log(visibleElements);
+  var currVal = 0;
+  document.querySelectorAll('#popular-route-2 li:not(.show)') .forEach(function(element) {   
+    if(currVal > 10){
+      return;
     }
-    routeIndex[index] += 5
+    element.classList.add('show');
+    currVal++
+    setTimeout(() => {
+        routeContainer.style.height = routeContainer.scrollHeight + 'px'
+      }, 0) 
+  });
 
-    loadMbtns.forEach((btn) => {
-      var btnIndex = btn.id.split('-')[1] - 1
-      if (routeIndex[btnIndex] >= route.length) {
-        btn.classList.add('disabled')
-        btn.disabled = true
-      } else {
-        btn.classList.remove('disabled')
-        btn.disabled = false
-      }
-    })
+
+
+  
+  if (document.querySelectorAll('#popular-route-2 li.show').length == document.querySelectorAll('#popular-route-2 li').length) {
+    document.querySelector('#loadbtn-2').style.display = 'none';
+    document.querySelector('#closeBtn').style.display = 'block';
   }
-  loadMbtns.forEach((btn) => {
-    btn.addEventListener('click', function (event) {
-      loadPopularRoute(event)
-    })
-  })
-  loadPopularRoute(event)
+
+});
+
+
+
+
+document.querySelector('#closeBtn').addEventListener('click', function() {
+  // var routeContainer = document.getElementById('popular-route-2')
+  routeContainer.style.height = 170 + 'px';
+  window.scrollTo({
+  top: routeContainer.offsetTop -210,
+  behavior: 'smooth'
+});
+  var currVal = 0
+ 
+  document.querySelectorAll('#popular-route-2 li') .forEach(function(element) {
+    currVal++
+    if(currVal > 3){
+      element.classList.remove('show');
+      
+  }
+  
+    
+});
+
+
+  document.querySelector('#loadbtn-2').style.display = 'block';
+  document.querySelector('#closeBtn').style.display = 'none';
+
+});
+
+});
+
+// use for resort 
+
+var dropdown = document.getElementById("resortDrpdwn");
+var options = document.querySelectorAll(".options");
+dropdown.addEventListener("change", function() {
+
+// Loop through all the options divs
+for (var i = 0; i < options.length; i++) {
+
+  // If the data-option attribute of the div matches the selected value of the dropdown, show the div. Otherwise, hide it.
+  if (options[i].getAttribute("data-option") == dropdown.value) {
+    options[i].style.display = "block";
+    // options[i].classList.add("show-option");
+    // options[i].classList.remove("hide-option");
+  } else {
+    options[i].style.display = "none";
+    // options[i].classList.add("hide-option");
+    // options[i].classList.remove("show-option");
+  }
+
 }
-  </script>
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
   
   </body>
 </html>
