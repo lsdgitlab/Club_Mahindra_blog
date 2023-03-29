@@ -282,21 +282,21 @@
                         }
                     }
 
-                    &.is-active {
-                        button {
-                            &.ac-trigger {
-                                &::before {
-                                    transform: rotate(180deg);
-                                    margin-top: -3px;
-                                }
-                            }
-                        }
+                    // &.is-active {
+                    //     button {
+                    //         &.ac-trigger {
+                    //             &::before {
+                    //                 transform: rotate(180deg);
+                    //                 margin-top: -3px;
+                    //             }
+                    //         }
+                    //     }
 
-                        .ac-panel {
-                            .ac-text {}
-                        }
+                    //     .ac-panel {
+                    //         .ac-text {}
+                    //     }
 
-                    }
+                    // }
 
                 }
             }

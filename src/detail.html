@@ -1740,6 +1740,7 @@ document.querySelector('#closeBtn').style.display = 'none';
 
 });
 
+
 document.addEventListener("DOMContentLoaded", function() {
 
 var routeContainer = document.getElementById('popular-route-1')
@@ -1754,6 +1755,9 @@ element.classList.add('show');
 
 });
 
+// const chkResort = document.querySelector('.check-out-blogs');
+// console.log("Top", chkResort.style.height = routeContainer.scrollHeight + 'px'); 
+
 // Load more elements when the "Load More" button is clicked
 document.querySelector('#loadbtn-1').addEventListener('click', function() {
 
@@ -1761,7 +1765,8 @@ document.querySelector('#loadbtn-1').addEventListener('click', function() {
 var visibleElements = document.querySelectorAll('#popular-route-1 li.show').length;
 
 // Show the next three elements
-console.log(visibleElements);
+
+
 var currVal = 0;
 document.querySelectorAll('#popular-route-1 li:not(.show)') .forEach(function(element) {   
   if(currVal > 10){
@@ -1770,7 +1775,8 @@ document.querySelectorAll('#popular-route-1 li:not(.show)') .forEach(function(el
   element.classList.add('show');
   currVal++
   setTimeout(() => {
-      routeContainer.style.height = routeContainer.scrollHeight + 'px'
+      routeContainer.style.height = routeContainer.scrollHeight + 'px';
+      
     }, 0) 
 });
 
@@ -1830,7 +1836,16 @@ dropdown.addEventListener("change", function() {
 
 });
 // Get the button element
+// const headerHe = document.querySelector('.form-container').offsetHeight;
+var routeContainer = document.getElementById('popular-route-1')
+const pplrHe = document.querySelector('.pos-sticky2');
+var elmTop = pplrHe.getBoundingClientRect().top;
+var routScrlhe = routeContainer.scrollHeight + elmTop;
+console.log("All",routScrlhe);
 
+pplrHe.style.top = routScrlhe +"px"
+// pplrHe.style.top = pplrHe.getBoundingClientRect().top +"px"
+// console.log("ttl",elmTop);
 
  </script>
   

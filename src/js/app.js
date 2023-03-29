@@ -513,3 +513,6 @@ $('#tabs-nav li').on('click', function () {
 //         scrollTop: $("#"+id).offset().top - heightOfNav,
 //     }, 1000);
 // };
+
+
+
